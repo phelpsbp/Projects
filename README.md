@@ -8,7 +8,7 @@ Included are projects utilizing programming languages like SQL and R, demonstrat
 
 Beyond technical proficiency, I take pride in my critical thinking and creative problem-solving approach. My strategic yet imaginative mindset enables me to address data analysis challenges, identify key issues, and uncover opportunities within the data.
 
-Confident in my skills and experience, I believe I am an ideal candidate for any data analyst role. I trust that my portfolio will provide you with informative, captivating, and engaging insights into my capabilities. 
+I trust that my portfolio will provide you with informative, captivating, and engaging insights into my capabilities. 
 I welcome the opportunity for discussion and look forward to hearing from you.
 
 Thank you for your time.
