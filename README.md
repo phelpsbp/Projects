@@ -1,7 +1,6 @@
 # Data Analytics Portfolio
 **Welcome!**
 
-
 As a certified data analyst, I leverage a diverse set of tools to collect, organize, and analyze data. Proficient in R, SQL, Excel, Power BI, and Tableau, I possess a comprehensive skill set encompassing data analytics techniques such as dashboard creation, data exploration, data merging, statistical analysis, and critical thinking.
 
 Within this portfolio, you'll discover a range of projects highlighting my prowess in data analytics. Explore links to Power BI and Tableau dashboards and reports that showcase my ability to analyze and present data in a visually compelling manner, facilitating understanding and actionable insights for executives and stakeholders.
