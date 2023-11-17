@@ -1,0 +1,275 @@
+---- CLEANING ---- 
+
+-- CREATING A NEW SUMMARY TABLE "summary_table" TO GET RID OF UNNECESSARY COLUMNS --
+
+-- 1. Change Column Names for a Better Understanding: 
+    > rideable_type -> bike_type
+    > member_casual -> customer_type 
+
+        CREATE TABLE
+          VisualizationTables.summary_table AS
+        SELECT
+          * EXCEPT (start_station_id,
+            end_station_id,
+            start_lat,
+            start_lng,
+            end_lat,
+            end_lng,
+            rideable_type,
+            member_casual),
+          rideable_type AS bike_type,
+          member_casual AS costumer_type
+        FROM
+          `capstone-403818.Original_Tables.jan_2021`
+        UNION ALL
+        SELECT
+          * EXCEPT (start_station_id,
+            end_station_id,
+            start_lat,
+            start_lng,
+            end_lat,
+            end_lng,
+            rideable_type,
+            member_casual),
+          rideable_type AS bike_type,
+          member_casual AS costumer_type
+        FROM
+          `capstone-403818.Original_Tables.feb_2021`
+        UNION ALL
+        SELECT
+          * EXCEPT (start_station_id,
+            end_station_id,
+            start_lat,
+            start_lng,
+            end_lat,
+            end_lng,
+            rideable_type,
+            member_casual),
+          rideable_type AS bike_type,
+          member_casual AS costumer_type
+        FROM
+          `capstone-403818.Original_Tables.mar_2021`
+        UNION ALL
+        SELECT
+          * EXCEPT (start_station_id,
+            end_station_id,
+            start_lat,
+            start_lng,
+            end_lat,
+            end_lng,
+            rideable_type,
+            member_casual),
+          rideable_type AS bike_type,
+          member_casual AS costumer_type
+        FROM
+          `capstone-403818.Original_Tables.apr_2021`
+        UNION ALL
+        SELECT
+          * EXCEPT (start_station_id,
+            end_station_id,
+            start_lat,
+            start_lng,
+            end_lat,
+            end_lng,
+            rideable_type,
+            member_casual),
+          rideable_type AS bike_type,
+          member_casual AS costumer_type
+        FROM
+          `capstone-403818.Original_Tables.may_2021`
+        UNION ALL
+        SELECT
+          * EXCEPT (start_station_id,
+            end_station_id,
+            start_lat,
+            start_lng,
+            end_lat,
+            end_lng,
+            rideable_type,
+            member_casual),
+          rideable_type AS bike_type,
+          member_casual AS costumer_type
+        FROM
+          `capstone-403818.Original_Tables.jun_2021`
+        UNION ALL
+        SELECT
+          * EXCEPT (start_station_id,
+            end_station_id,
+            start_lat,
+            start_lng,
+            end_lat,
+            end_lng,
+            rideable_type,
+            member_casual),
+          rideable_type AS bike_type,
+          member_casual AS costumer_type
+        FROM
+          `capstone-403818.Original_Tables.jul_2021`
+        UNION ALL
+        SELECT
+          * EXCEPT (start_station_id,
+            end_station_id,
+            start_lat,
+            start_lng,
+            end_lat,
+            end_lng,
+            rideable_type,
+            member_casual),
+          rideable_type AS bike_type,
+          member_casual AS costumer_type
+        FROM
+          `capstone-403818.Original_Tables.aug_2021`
+        UNION ALL
+        SELECT
+          * EXCEPT (start_station_id,
+            end_station_id,
+            start_lat,
+            start_lng,
+            end_lat,
+            end_lng,
+            rideable_type,
+            member_casual),
+          rideable_type AS bike_type,
+          member_casual AS costumer_type
+        FROM
+          `capstone-403818.Original_Tables.sept_2021`
+        UNION ALL
+        SELECT
+          * EXCEPT (start_station_id,
+            end_station_id,
+            start_lat,
+            start_lng,
+            end_lat,
+            end_lng,
+            rideable_type,
+            member_casual),
+          rideable_type AS bike_type,
+          member_casual AS costumer_type
+        FROM
+          `capstone-403818.Original_Tables.oct_2021`
+        UNION ALL
+        SELECT
+          * EXCEPT (start_station_id,
+            end_station_id,
+            start_lat,
+            start_lng,
+            end_lat,
+            end_lng,
+            rideable_type,
+            member_casual),
+          rideable_type AS bike_type,
+          member_casual AS costumer_type
+        FROM
+          `capstone-403818.Original_Tables.nov_2021`
+        UNION ALL
+        SELECT
+          * EXCEPT (start_station_id,
+            end_station_id,
+            start_lat,
+            start_lng,
+            end_lat,
+            end_lng,
+            rideable_type,
+            member_casual),
+          rideable_type AS bike_type,
+          member_casual AS costumer_type
+        FROM
+          `capstone-403818.Original_Tables.dec_2021`
+        ORDER BY
+          started_at; 
+          
+
+---- DATA MANIPULATION ---- 
+
+-- USING TABLE AGGREGATION TO EXTRACT ADDITIONAL DATA FOR FUTURE ANALYSIS --
+
+-- 1. Converting "ride_duration", "day_of_week", and "ride_month" Columns to Correct Data Types
+
+        WITH
+          agg_table AS
+          (SELECT
+            * EXCEPT (day_of_week),
+            DATETIME_DIFF(ended_at, started_at, minute) AS ride_duration,
+            EXTRACT(month
+            FROM
+              started_at) AS ride_month,
+
+
+-- 2. Replacing "day_of_week" Numeric Values with Correlating Days
+  
+           CASE
+              WHEN day_of_week = 1 THEN "Sunday"
+              WHEN day_of_week = 2 THEN "Monday"
+              WHEN day_of_week = 3 THEN "Tuesday"
+              WHEN day_of_week = 4 THEN "Wednesday"
+              WHEN day_of_week = 5 THEN "Thursday"
+              WHEN day_of_week = 6 THEN "Friday"
+            ELSE
+            "Saturday"
+          END
+            AS day_of_week
+          FROM
+            `capstone-403818.months_2021.alldata`),
+
+
+-- 3. Replacing "ride_month" Numeric Values with Correlating Months
+
+      month_name as
+          (select
+            * EXCEPT (ride_month),
+            CASE
+              WHEN ride_month = 1 THEN "Jan"
+              WHEN ride_month = 2 THEN "Feb"
+              WHEN ride_month = 3 THEN "Mar"
+              WHEN ride_month = 4 THEN "Apr"
+              WHEN ride_month = 5 THEN "May"
+              WHEN ride_month = 6 THEN "Jun"
+              WHEN ride_month = 7 THEN "Jul"
+              WHEN ride_month = 8 THEN "Aug"
+              WHEN ride_month = 9 THEN "Sept"
+              WHEN ride_month = 10 THEN "Oct"
+              WHEN ride_month = 11 THEN "Nov"
+              WHEN ride_month = 12 THEN "Dec"
+          END
+            AS month_name
+          FROM
+            `capstone-403818.VisualizationTables.summary_table`),
+
+
+-- 4. Removing Nulls.
+
+        trim_station AS 
+           (SELECT
+            * EXCEPT (start_station_name,
+              end_station_name),
+            trim (start_station_name) AS start_station_name,
+            trim (end_station_name) AS end_station_name
+        FROM
+          agg_table
+        WHERE
+          ride_id IS NOT NULL),
+
+-- 5. Removing Test Rides (Rides > 1 Day).
+      
+        remove_test_rides as 
+          (select
+            *
+            from trim_station
+            where start_station_name NOT LIKE '%TEST%'
+            and start_station_name NOT LIKE '%TEMP%' 
+            AND start_station_name NOT LIKE '%CHECKING%'
+            AND start_station_name NOT LIKE '%*%'
+            AND end_station_name NOT LIKE '%TEST%'
+            AND end_station_name NOT LIKE '%TEMP%'
+            AND end_station_name NOT LIKE '%CHECKING%'
+            AND end_station_name NOT LIKE '%*%'
+            AND ride_duration >1
+          )
+
+-- 6. Removing Nulls From Agg Table
+
+        select *
+        from agg_table
+        where
+        start_station_name is not null
+        and end_station_name is not null;
