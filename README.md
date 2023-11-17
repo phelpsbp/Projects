@@ -12,3 +12,8 @@ I trust that my portfolio will provide you with informative, captivating, and en
 I welcome the opportunity for discussion and look forward to hearing from you.
 
 Thank you for your time.
+
+Quick Links:
+* [SQL Portfolio](https://github.com/phelpsbp/Data-Analytics-Portfolio/tree/7176566b91ed53552d4eca2f6c6d8d71a9236a7b/SQL)
+* [Tableau Portfolio](https://public.tableau.com/app/profile/brittany.everette/vizzes)
+* [Power BI Portfolio](https://www.novypro.com/profile_projects/brittanyeverette)
