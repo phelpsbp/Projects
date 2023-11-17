@@ -1,0 +1,76 @@
+-- CREATING ONE LARGE MASTER DATASET -- 
+-- 1. Combining 12 Tables using the UNION ALL function
+
+SELECT
+  *
+FROM ((
+    SELECT
+      *
+    FROM
+      `capstone-403818.Original_Tables.jan_2021`)
+  UNION ALL (
+    SELECT
+      *
+    FROM
+      `capstone-403818.Original_Tables.feb_2021`)
+  UNION ALL (
+    SELECT
+      *
+    FROM
+      `capstone-403818.Original_Tables.mar_2021`)
+  UNION ALL (
+    SELECT
+      *
+    FROM
+      `capstone-403818.Original_Tables.apr_2021`)
+  UNION ALL (
+    SELECT
+      *
+    FROM
+      `capstone-403818.Original_Tables.may_2021`)
+  UNION ALL (
+    SELECT
+      *
+    FROM
+      `capstone-403818.Original_Tables.jun_2021`)
+  UNION ALL (
+    SELECT
+      *
+    FROM
+      `capstone-403818.Original_Tables.jul_2021`)
+  UNION ALL (
+    SELECT
+      *
+    FROM
+      `capstone-403818.Original_Tables.aug_2021`)
+  UNION ALL (
+    SELECT
+      *
+    FROM
+      `capstone-403818.Original_Tables.sept_2021`)
+  UNION ALL (
+    SELECT
+      *
+    FROM
+      `capstone-403818.Original_Tables.oct_2021`)
+  UNION ALL (
+    SELECT
+      *
+    FROM
+      `capstone-403818.Original_Tables.nov_2021`)
+  UNION ALL (
+    SELECT
+      *
+    FROM
+      `capstone-403818.Original_Tables.dec_2021`))
+
+
+-- 2. Removing Nulls 
+
+WHERE
+  start_station_name IS NOT NULL
+  AND end_station_name IS NOT NULL
+  AND end_station_id IS NOT NULL
+  AND start_station_id IS NOT NULL
+  AND end_lat IS NOT NULL
+  AND start_lat IS NOT NULL;
