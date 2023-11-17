@@ -5,3 +5,7 @@ SQL TOOLS USED:
 * Google's BigQuery
 * MySQL
 * Microsoft's SQL Server Managment Studio
+
+QUICK LINKS:
+* [Cyclistic Bike-Share Case Study](https://github.com/phelpsbp/Data-Analytics-Portfolio/tree/a8c73402005c9068835b8012c04267f41364e745/SQL/GoogleCaseStudy)
+* [COVID Portfolio Project](https://github.com/phelpsbp/Data-Analytics-Portfolio/tree/a8c73402005c9068835b8012c04267f41364e745/SQL/COVIDPortfolioProject)
