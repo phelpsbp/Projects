@@ -9,6 +9,7 @@ Tools Used:
 * Tableau
 
 Quick Links:
+* [Full Published COVID-19 Analysis Project](https://medium.com/brittany-phelps-analytics/covid-19-global-health-data-exploration-59a29388ea33)
 * [COVID SQL](https://github.com/phelpsbp/Data-Analytics-Portfolio/blob/a7827d9954627c96a3c8c0611c215dd5d14e74c4/SQL/COVIDPortfolioProject/COVID%20Porfolio%20Project%20Script.sql)
 * [COVID Tableau SQL](https://github.com/phelpsbp/Data-Analytics-Portfolio/blob/a7827d9954627c96a3c8c0611c215dd5d14e74c4/SQL/COVIDPortfolioProject/COVID%20Tableau%20Script.sql)
 * [COVID Dashboard](https://public.tableau.com/views/CovidDashboard_17001768757930/Dashboard1?:language=en-US&:display_count=n&:origin=viz_share_link)
