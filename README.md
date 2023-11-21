@@ -1,11 +1,9 @@
 # Data Analytics Portfolio
 **Welcome!**
 
-As a certified data analyst, I leverage a diverse set of tools to collect, organize, and analyze data. Proficient in R, SQL, Excel, Power BI, and Tableau, I possess a comprehensive skill set encompassing data analytics techniques such as dashboard creation, data exploration, data merging, statistical analysis, and critical thinking.
+Recently completing Google's Data Analytics Professional Certificate, I'm eager to kickstart my career as a Data Analyst. With a solid foundation in statistical analysis, data visualization, and proficiency in Python and SQL, I bring a fresh perspective to the world of data.
 
-Within this portfolio, you'll discover a range of projects highlighting my prowess in data analytics. Explore links to Power BI and Tableau dashboards and reports that showcase my ability to analyze and present data in a visually compelling manner, facilitating understanding and actionable insights for executives and stakeholders.
-Included are projects utilizing programming languages like SQL and R, demonstrating my capacity to extract valuable insights from extensive and intricate datasets. These examples illustrate my capability to integrate data from various sources, providing a holistic perspective.
-
+Here you'll find all of the SQL queries for my portfolio projects, showcasing practical experience with tools such as Excel, Tableau, and Power BI, enabling me to extract valuable insights from complex datasets. A quick learner and adept problem-solver, I'm ready to contribute to data-driven decision-making in a professional setting. Excited to bring my analytical skills to a team that values innovation, creativity, and efficiency.
 Beyond technical proficiency, I take pride in my critical thinking and creative problem-solving approach. My strategic yet imaginative mindset enables me to address data analysis challenges, identify key issues, and uncover opportunities within the data.
 
 I trust that my portfolio will provide you with informative, captivating, and engaging insights into my capabilities. 
