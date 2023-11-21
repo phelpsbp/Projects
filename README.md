@@ -15,4 +15,4 @@ Quick Links:
 * [Complete Data Analysis Portfolio on Medium](https://medium.com/brittany-phelps-analytics)
 * [SQL Portfolio](https://github.com/phelpsbp/Data-Analytics-Portfolio/tree/7176566b91ed53552d4eca2f6c6d8d71a9236a7b/SQL)
 * [Tableau Portfolio](https://public.tableau.com/app/profile/brittany.everette/vizzes)
-* [Power BI Portfolio](https://www.novypro.com/profile_projects/brittanyeverette)
+* [Power BI Portfolio](https://www.novypro.com/profile_projects/brittanyphelps)
