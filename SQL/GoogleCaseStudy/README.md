@@ -1,4 +1,4 @@
-# Cyclistic Bike-Share Analysis
+# Cyclistic Bike-Share Case Study
 **Google Capstone Project: Cyclistic Bike-Share Case Study**
 
 In this case study, I am a junior data analyst on the Marketing Analytics Team for a company named Cyclistic Bike-Share. I have been assigned the analysis of historical bike trip data in order to identify trends. Using those trends, I am tasked to produce compelling data and professional data visualizations with insights and recommendations for marketing strategies to convert casual riders to annual members for future revenue and growth.
