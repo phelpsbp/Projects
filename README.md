@@ -1,8 +1,7 @@
-# Data Analytics Portfolio
+# Project Files
 **Welcome!**
 
-Here you'll find all of the SQL queries for my portfolio projects, showcasing practical experience with tools such as SQL, Excel, Tableau, and Power BI, enabling me to extract valuable insights from complex datasets. A quick learner and adept problem-solver, I'm ready to contribute to data-driven decision-making in a professional setting. Excited to bring my analytical skills to a team that values innovation, creativity, and efficiency.
-Beyond technical proficiency, I take pride in my critical thinking and creative problem-solving approach. My strategic yet imaginative mindset enables me to address data analysis challenges, identify key issues, and uncover opportunities within the data.
+Here you'll find all of the SQL queries related to my portfolio projects.
 
 I trust that my portfolio will provide you with informative, captivating, and engaging insights into my capabilities. 
 I welcome the opportunity for discussion and look forward to hearing from you.
