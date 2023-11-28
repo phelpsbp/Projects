@@ -11,8 +11,8 @@ Tools Used:
 * Power BI
 
 Quick Links:
-* [Data Merging](https://github.com/phelpsbp/Data-Analytics-Portfolio/blob/a60b0ba696a8711f7628dbc644a09bc1895e694e/SQL/GoogleCaseStudy/Data%20Merging)
-* [Data Cleaning](https://github.com/phelpsbp/Data-Analytics-Portfolio/blob/a60b0ba696a8711f7628dbc644a09bc1895e694e/SQL/GoogleCaseStudy/Data%20Cleaning)
-* [Data Analysis](https://github.com/phelpsbp/Data-Analytics-Portfolio/blob/a60b0ba696a8711f7628dbc644a09bc1895e694e/SQL/GoogleCaseStudy/Data%20Analysis)
+* [Data Merging](https://github.com/phelpsbp/Project-Files/blob/main/SQL/GoogleCaseStudy/Data%20Merging)
+* [Data Cleaning](https://github.com/phelpsbp/Project-Files/blob/main/SQL/GoogleCaseStudy/Data%20Cleaning)
+* [Data Analysis](https://github.com/phelpsbp/Project-Files/blob/main/SQL/GoogleCaseStudy/Data%20Analysis)
 * [Full Published Case Study](https://medium.com/brittany-phelps-analytics/cyclistic-bike-share-case-study-5c12f2e88daf?source=friends_link&sk=859997fe764a954aef0caf709f16d96b)
 * [Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNDY5Y2NkYWYtY2M0Zi00YTJkLWE5MjQtMTBhMmU5ZjA0NGNiIiwidCI6IjM1NWI3MWIwLWEyMDQtNGMyMC05NzQ3LTVlYTU3OTQyNzkxZCIsImMiOjJ9)
