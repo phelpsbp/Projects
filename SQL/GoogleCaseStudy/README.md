@@ -14,5 +14,5 @@ Quick Links:
 * [Data Merging](https://github.com/phelpsbp/Project-Files/blob/main/SQL/GoogleCaseStudy/Data%20Merging)
 * [Data Cleaning](https://github.com/phelpsbp/Project-Files/blob/main/SQL/GoogleCaseStudy/Data%20Cleaning)
 * [Data Analysis](https://github.com/phelpsbp/Project-Files/blob/main/SQL/GoogleCaseStudy/Data%20Analysis)
-* [Full Published Case Study](https://medium.com/brittany-phelps-analytics/cyclistic-bike-share-case-study-5c12f2e88daf?source=friends_link&sk=859997fe764a954aef0caf709f16d96b)
+* [Full Published Case Study](https://phelpsbp.github.io/cyclistic-bike-share-analysis-portfolio-project.html)
 * [Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiNDY5Y2NkYWYtY2M0Zi00YTJkLWE5MjQtMTBhMmU5ZjA0NGNiIiwidCI6IjM1NWI3MWIwLWEyMDQtNGMyMC05NzQ3LTVlYTU3OTQyNzkxZCIsImMiOjJ9)
