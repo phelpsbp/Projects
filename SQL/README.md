@@ -3,7 +3,7 @@ Enclosed within this directory are a diverse array of projects that serve as a t
 
 SQL TOOLS USED:
 * Google's BigQuery
-* MySQL
+* MySQL Workbench
 * Microsoft's SQL Server Managment Studio
 
 QUICK LINKS:
