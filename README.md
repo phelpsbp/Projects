@@ -11,6 +11,4 @@ Thank you for your time.
 Quick Links:
 * [Data Analytics Website](https://phelpsbp.github.io)
 * [SQL Portfolio](https://github.com/phelpsbp/Project-Files/tree/main/SQL)
-* [Tableau Portfolio](https://public.tableau.com/app/profile/brittany.everette/vizzes)
-* [Power BI Portfolio](https://www.novypro.com/profile_projects/brittanyphelps)
 * [LinkedIn](https://www.linkedin.com/in/brittany-everette/)
