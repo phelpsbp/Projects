@@ -9,7 +9,7 @@ I welcome the opportunity for discussion and look forward to hearing from you.
 Thank you for your time.
 
 Quick Links:
-* [Complete Data Analytics Portfolio](https://phelpsbp.github.io)
+* [Data Analytics Website](https://phelpsbp.github.io)
 * [SQL Portfolio](https://github.com/phelpsbp/Project-Files/tree/main/SQL)
 * [Tableau Portfolio](https://public.tableau.com/app/profile/brittany.everette/vizzes)
 * [Power BI Portfolio](https://www.novypro.com/profile_projects/brittanyphelps)
