@@ -9,4 +9,4 @@ SQL TOOLS USED:
 QUICK LINKS:
 * [Cyclistic Bike-Share Case Study](https://github.com/phelpsbp/Project-Files/tree/main/SQL/GoogleCaseStudy)
 * [COVID Portfolio Project](https://github.com/phelpsbp/Project-Files/tree/main/SQL/COVIDPortfolioProject)
-* [Model Car Database Project](https://github.com/phelpsbp/Project-Files/tree/main/SQL/ModelCarDatabaseAnalysis)
+* [Mint Classics Inventory Analysis](https://github.com/phelpsbp/Project-Files/tree/main/SQL/MintClassicsInventoryAnalysis)
