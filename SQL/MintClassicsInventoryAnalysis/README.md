@@ -11,5 +11,5 @@ Tools Used:
 Quick Links:
 * [Mint Classics Dataset](https://d3c33hcgiwev3.cloudfront.net/2oM-7bPhQAK0DX4vqIQ_JQ_596ae3ede6934608af481acc56cb18f1_mintclassicsDB.sql?Expires=1701993600&Signature=dShvrtGJLsQD2jDNaa~4YrY9RMnItBt9vtQaxiN6PeFpDNgNMmnV3eu8q6RRgu66Mo9YmvipbRfHsgXCuLKOvraKCq7vbGuQN664xB5X8ot0~N-txScgkRcM5d2OYhUdoKy1jy6RCkTKQNX1afuYxThRPKe-klWcSlNfuyCuuf0_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 * [SQL Queries](https://github.com/phelpsbp/Project-Files/blob/main/SQL/MintClassicsInventoryAnalysis/Mints%20Classics%20SQL%20Queries.sql)
-* [SQL Queries: What-If Analysis](https://github.com/phelpsbp/Project-Files/blob/main/SQL/ModelCarDatabaseAnalysis/Mints%20Classics%20What-if%20Analysis%20SQL%20Script.sql)
+* [SQL Queries: What-If Analysis](https://github.com/phelpsbp/Project-Files/blob/main/SQL/MintClassicsInventoryAnalysis/Mints%20Classics%20What-if%20Analysis%20SQL%20Script.sql)
 * [Full Published Analysis]()
