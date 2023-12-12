@@ -17,12 +17,15 @@
 
 This data analysis project aims to produce insights into customer trends for a bike-share compnay, Cyclistic. By analyzing historical bike trip data, we seek to produce professional data visualizations, along with recommendations for marketing strategies, aimed at converting casual riders to annual members for future revenue and growth.
 
-![bar plot](https://github.com/Irene-arch/Documenting_Example/assets/56026296/5ebedeb8-65e4-4f09-a2a5-0699119f5ff7)
+<img src="https://github.com/phelpsbp/Project-Files/assets/150976820/20575a78-5426-410d-93b3-359e5d04fd9c" width="500"/>
+
+
 
 
 ### Data Sources
 
-The [data](https://divvy-tripdata.s3.amazonaws.com/index.html) is made available by Motivate International Inc. under this [license](https://divvybikes.com/data-license-agreement). This is a public data set and there is no personal user information being shared. 
+The [data](https://divvy-tripdata.s3.amazonaws.com/index.html) is made available by Motivate International Inc. under this [license](https://divvybikes.com/data-license-agreement). 
+This is a public data set and there is no personal user information being shared. 
 
 
 ### Tools
