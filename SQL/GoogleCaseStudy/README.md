@@ -49,9 +49,68 @@ The [data](https://divvy-tripdata.s3.amazonaws.com/index.html) is made available
 ### Data Cleaning/Preparation
 
 In the initial data preparation phase, we performed the following tasks:
-1. Data loading and inspection.
-2. Handling missing values.
-3. Data cleaning and formatting.
+#### Cleaning in Excel:
+1. Checked for and removed duplicates and nulls. 
+2. Removed spacing using the TRIM() function.
+3. Changed time format in ride_length to 37:30:55.
+4. Created new "day_of_week" column using the WEEKDAY() function and formatted it as a number with no decimals(1=Sunday, 7=Saturday).
+5. Created "ride_month" with 1-12 representing January-December respectively.
+6. Loaded each month's CSV file into Google Cloud as a bucket then imported them into BigQuery.
+
+#### Preparation in BigQuery
+1. Created a new dataset titled (alldata)[] using the UNION ALL function.
+2. Created a new master dataset, (summary_table), to get rid of unnecesary columns.
+3. Made the following changes for a clearer understanding of column names:
+   * rideable_type --> bike_type
+   * member_casual --> customer_type
+4. Used table aggregation using the WITH agg_table AS function to extract ride_duration in minutes through the DATETIME_DIFF function.
+5. Replaced all numeric values in day_of_week and ride_month columns with their corresponding names using the CASE, WHEN function.
+
+```sql
+     WITH
+          agg_table AS
+          (SELECT
+            * EXCEPT (day_of_week),
+            DATETIME_DIFF(ended_at, started_at, minute) AS ride_duration,
+            EXTRACT(month
+            FROM
+              started_at) AS ride_month,
+
+       CASE
+              WHEN day_of_week = 1 THEN "Sunday"
+              WHEN day_of_week = 2 THEN "Monday"
+              WHEN day_of_week = 3 THEN "Tuesday"
+              WHEN day_of_week = 4 THEN "Wednesday"
+              WHEN day_of_week = 5 THEN "Thursday"
+              WHEN day_of_week = 6 THEN "Friday"
+            ELSE
+            "Saturday"
+          END
+            AS day_of_week
+          FROM
+            `capstone-403818.months_2021.alldata`),
+
+       month_name as
+          (select
+            * EXCEPT (ride_month),
+            CASE
+              WHEN ride_month = 1 THEN "Jan"
+              WHEN ride_month = 2 THEN "Feb"
+              WHEN ride_month = 3 THEN "Mar"
+              WHEN ride_month = 4 THEN "Apr"
+              WHEN ride_month = 5 THEN "May"
+              WHEN ride_month = 6 THEN "Jun"
+              WHEN ride_month = 7 THEN "Jul"
+              WHEN ride_month = 8 THEN "Aug"
+              WHEN ride_month = 9 THEN "Sept"
+              WHEN ride_month = 10 THEN "Oct"
+              WHEN ride_month = 11 THEN "Nov"
+              WHEN ride_month = 12 THEN "Dec"
+          END
+            AS month_name
+          FROM
+            `capstone-403818.VisualizationTables.summary_table`),
+```
 
 ### Exploratory Data Analysis
 
