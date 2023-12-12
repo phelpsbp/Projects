@@ -10,7 +10,8 @@
 - [Results and Findings](#results-and-findings)
 - [Recommendations](#recommendations)
 - [Limitations](#limitations)
-- [Power BI Dashboard](#dashboard)
+- [Deliverables](#deliverables)
+
   
 ### Project Overview
 ---
@@ -261,16 +262,20 @@ Based on the analysis, my recommendations of a marketing strategy aimed at conve
    - Advertise at bike stations most frequented by casual riders, especially at stations near large tourist attractions and entertainment.
 3. ***Seasonal Marketing Campaign***
    - Use targeted marketing during peak activity hours, specifically on weekends and during Summer, to highlight the cost-savings advantages of annual membership.
-   
+
 ## Limitations
 
 Even after removing test rides (rides greater than 24 hours in duration), there were some outliers in casual riders. This could be a factor in casual riders having significantly longer average ride lengths.
 There was no data on gender or age, both of which can play a huge role in biking trends, limiting possible marketing opportunities to specific groups. 
 
-## Dashboard
-<img src="https://github.com/phelpsbp/Project-Files/assets/150976820/20575a78-5426-410d-93b3-359e5d04fd9c" width="500"/>
+  
+## Deliverables
 
 The Full, interactive Power BI Dashboard can be viewed [here](https://app.powerbi.com/view?r=eyJrIjoiNDY5Y2NkYWYtY2M0Zi00YTJkLWE5MjQtMTBhMmU5ZjA0NGNiIiwidCI6IjM1NWI3MWIwLWEyMDQtNGMyMC05NzQ3LTVlYTU3OTQyNzkxZCIsImMiOjJ9)
 
+<img src="https://github.com/phelpsbp/Project-Files/assets/150976820/20575a78-5426-410d-93b3-359e5d04fd9c" height="450"/>
+   
 
 
+
+---
