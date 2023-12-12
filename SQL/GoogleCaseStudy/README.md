@@ -30,8 +30,8 @@ The [data](https://divvy-tripdata.s3.amazonaws.com/index.html) is made available
 - Google BigQuery - Data Analysis
 - PowerBI - Dashboard
 
-
-### Data Cleaning/Preparation
+---
+## Data Cleaning/Preparation
 
 In the initial data preparation phase, we performed the following tasks:
 #### Cleaning in Excel:
@@ -43,7 +43,7 @@ In the initial data preparation phase, we performed the following tasks:
 6. Loaded each month's CSV file into Google Cloud as a bucket then imported them into BigQuery.
 
 #### Preparation in BigQuery
-1. Created a new dataset titled (alldata)[] using the UNION ALL function.
+1. Created a new dataset titled [alldata](https://github.com/phelpsbp/Project-Files/blob/main/SQL/GoogleCaseStudy/alldata.csv) using the UNION ALL function.
 2. Created a new master dataset, [summary_table](https://github.com/phelpsbp/Project-Files/blob/main/SQL/GoogleCaseStudy/summary_table.csv), to get rid of unnecesary columns.
 3. Made the following changes for a clearer understanding of column names:
    * rideable_type --> bike_type
@@ -97,22 +97,76 @@ In the initial data preparation phase, we performed the following tasks:
             `capstone-403818.VisualizationTables.summary_table`),
 ```
 
-### Exploratory Data Analysis
+## Exploratory Data Analysis
 
-EDA involved exploring the sales data to answer key questions, such as:
+EDA involved exploring the service usage data to answer key questions, such as:
 
-- What is the overall sales trend?
-- Which products are top sellers?
-- What are the peak sales periods?
+- What are the overall bike usage trends?
+- Which bikes are used most?
+- When are the peak bike usage periods?
+- Which bike stations are most frequented?
 
-### Data Analysis
+## Data Analysis
 
-Include some interesting code/features worked with
+*Note: All data is grouped by customer type. There was a type within the data tables. "costumer_type" was corrected to "customer_type"*
+
+### Examining the differences total trips taken 
+#### Total Trips Overall: 
 
 ```sql
-SELECT * FROM table1
-WHERE cond = 2;
+SELECT 
+  costumer_type,
+  COUNT(*) AS total_trips
+FROM `capstone-403818.VisualizationTables.summary_table`
+GROUP BY costumer_type
+ORDER BY costumer_type;
+
+SELECT 
+  costumer_type,
+  bike_type,
+  COUNT(*) AS total_trips
+FROM 
+  `capstone-403818.VisualizationTables.summary_table`
+GROUP BY 
+  costumer_type, bike_type
+ORDER BY 
+  costumer_type, total_trips;
+
+SELECT 
+  costumer_type,
+  ride_month,
+  COUNT(ride_id) AS total_trips
+FROM 
+  `capstone-403818.VisualizationTables.summary_table`
+GROUP BY 
+  costumer_type, ride_month
+ORDER BY 
+  ride_month;
+
+SELECT 
+  costumer_type,
+  day_of_week,
+  COUNT(ride_id) AS total_trips
+FROM 
+  `capstone-403818.VisualizationTables.summary_table`
+GROUP BY 
+  costumer_type, day_of_week
+ORDER BY 
+  day_of_week;
+
+SELECT 
+  EXTRACT(HOUR FROM started_at) AS hour,
+  COUNT(started_at) AS total_rides,
+  costumer_type
+FROM 
+  `capstone-403818.VisualizationTables.summary_table`
+GROUP BY 
+  hour, costumer_type
+ORDER BY 
+  hour;
 ```
+
+ii. 
 
 ### Results/Findings
 
