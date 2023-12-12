@@ -17,11 +17,6 @@
 
 This data analysis project aims to produce insights into customer trends for a bike-share compnay, Cyclistic. By analyzing historical bike trip data, we seek to produce professional data visualizations, along with recommendations for marketing strategies, aimed at converting casual riders to annual members for future revenue and growth.
 
-<img src="https://github.com/phelpsbp/Project-Files/assets/150976820/20575a78-5426-410d-93b3-359e5d04fd9c" width="500"/>
-
-
-
-
 ### Data Sources
 
 The [data](https://divvy-tripdata.s3.amazonaws.com/index.html) is made available by Motivate International Inc. under this [license](https://divvybikes.com/data-license-agreement). 
@@ -267,13 +262,14 @@ Based on the analysis, my recommendations of a marketing strategy aimed at conve
 3. ***Seasonal Marketing Campaign***
    - Use targeted marketing during peak activity hours, specifically on weekends and during Summer, to highlight the cost-savings advantages of annual membership.
    
-
 ## Limitations
 
 Even after removing test rides (rides greater than 24 hours in duration), there were some outliers in casual riders. This could be a factor in casual riders having significantly longer average ride lengths.
 There was no data on gender or age, both of which can play a huge role in biking trends, limiting possible marketing opportunities to specific groups. 
 
 ## Dashboard
+<img src="https://github.com/phelpsbp/Project-Files/assets/150976820/20575a78-5426-410d-93b3-359e5d04fd9c" width="500"/>
+
 The Full, interactive Power BI Dashboard can be viewed [here](https://app.powerbi.com/view?r=eyJrIjoiNDY5Y2NkYWYtY2M0Zi00YTJkLWE5MjQtMTBhMmU5ZjA0NGNiIiwidCI6IjM1NWI3MWIwLWEyMDQtNGMyMC05NzQ3LTVlYTU3OTQyNzkxZCIsImMiOjJ9)
 
 
