@@ -1,0 +1,501 @@
+ride_id,started_at,ended_at,start_station_name,end_station_name,ride_length,bike_type,costumer_type,ride_duration,ride_month,day_of_week
+492B5DB7E09CD244,10/6/2021 17:06:00,10/6/2021 17:20:00,Michigan Ave & Lake St,Calumet Ave & 18th St,0:14:42,electric_bike,member,14,10,Wednesday
+C953BCE5BAF481CF,10/6/2021 17:06:00,10/6/2021 17:20:00,Desplaines St & Kinzie St,Clinton St & Lake St,0:14:02,classic_bike,member,14,10,Wednesday
+65EC2D97571DBD3F,10/6/2021 17:07:00,10/6/2021 17:12:00,Clinton St & Jackson Blvd,Aberdeen St & Monroe St,0:05:17,classic_bike,member,5,10,Wednesday
+CFA3EB3680CF34F6,10/6/2021 17:07:00,10/6/2021 17:14:00,Halsted St & Clybourn Ave,Milwaukee Ave & Grand Ave,0:06:57,electric_bike,member,7,10,Wednesday
+EF7DD10B61E50625,10/6/2021 17:08:00,10/6/2021 17:22:00,Franklin St & Jackson Blvd,Larrabee St & Division St,0:14:02,classic_bike,casual,14,10,Wednesday
+C791B1DDD913A391,10/6/2021 17:08:00,10/6/2021 17:36:00,Michigan Ave & Oak St,Broadway & Argyle St,0:28:40,electric_bike,member,28,10,Wednesday
+3C7B9C6536DEC258,10/6/2021 17:09:00,10/6/2021 17:18:00,Ellis Ave & 60th St,Ellis Ave & 55th St,0:08:36,classic_bike,member,9,10,Wednesday
+FE18292CE6C67636,10/6/2021 17:09:00,10/6/2021 17:25:00,Clark St & Schiller St,DuSable Lake Shore Dr & Monroe St,0:15:27,docked_bike,casual,16,10,Wednesday
+3424B72A65A833BD,10/6/2021 17:09:00,10/6/2021 17:25:00,Green St & Madison St,Millennium Park,0:15:27,electric_bike,casual,16,10,Wednesday
+D95C327544C05BAE,10/6/2021 17:09:00,10/6/2021 17:14:00,Ellis Ave & 60th St,Ellis Ave & 55th St,0:05:19,classic_bike,member,5,10,Wednesday
+3442DE3FBAC42788,10/6/2021 17:10:00,10/6/2021 17:26:00,LaSalle St & Illinois St,Wabash Ave & Roosevelt Rd,0:16:23,classic_bike,member,16,10,Wednesday
+E4A131792CC6243C,10/6/2021 17:10:00,10/6/2021 17:34:00,Clark St & Bryn Mawr Ave,Halsted St & Roscoe St,0:24:34,classic_bike,member,24,10,Wednesday
+0269799632DB44CA,10/6/2021 17:10:00,10/6/2021 17:37:00,Morgan St & Lake St,Emerald Ave & 31st St,0:26:47,classic_bike,member,27,10,Wednesday
+BD057A8BFA311EE0,10/6/2021 17:10:00,10/6/2021 17:12:00,Clark St & Schiller St,Clark St & Elm St,0:02:00,classic_bike,member,2,10,Wednesday
+E3FFA0700E96AAD5,10/6/2021 17:10:00,10/6/2021 17:43:00,Clark St & Elm St,California Ave & Fletcher St,0:32:56,classic_bike,member,33,10,Wednesday
+8F11E39A9169D167,10/6/2021 17:10:00,10/6/2021 17:18:00,Leavitt St & Addison St,California Ave & Byron St,0:07:56,classic_bike,member,8,10,Wednesday
+300D26FBCF31EF75,10/6/2021 17:11:00,10/6/2021 17:20:00,Lincoln Park Conservatory,Sheffield Ave & Willow St,0:09:38,classic_bike,member,9,10,Wednesday
+06B09CE1123203AD,10/6/2021 17:11:00,10/6/2021 17:35:00,Damen Ave & Cullerton St,Wabash Ave & Cermak Rd,0:23:13,electric_bike,casual,24,10,Wednesday
+84BB8907734806E2,10/6/2021 17:12:00,10/6/2021 17:47:00,State St & Randolph St,Richmond St & Diversey Ave,0:35:44,classic_bike,member,35,10,Wednesday
+810DFFC6CCFC5FBA,10/6/2021 17:12:00,10/6/2021 17:28:00,Elston Ave & Cortland St,Campbell Ave & Fullerton Ave,0:16:57,classic_bike,casual,16,10,Wednesday
+9D194124A9750DC7,10/6/2021 17:12:00,10/6/2021 17:27:00,Sheridan Rd & Buena Ave,Sheffield Ave & Wellington Ave,0:14:35,electric_bike,member,15,10,Wednesday
+E3F87A22401EEE02,10/6/2021 17:12:00,10/6/2021 17:22:00,State St & Pershing Rd,Indiana Ave & 31st St,0:10:16,electric_bike,member,10,10,Wednesday
+3D5CC9A625CEE71C,10/6/2021 17:13:00,10/6/2021 17:31:00,Noble St & Milwaukee Ave,Kedzie Ave & Milwaukee Ave,0:18:03,electric_bike,member,18,10,Wednesday
+1BCFAB181C02C632,10/6/2021 17:13:00,10/6/2021 17:21:00,Franklin St & Jackson Blvd,Wabash Ave & Wacker Pl,0:08:03,classic_bike,member,8,10,Wednesday
+031A59BA5A6894CE,10/6/2021 17:13:00,10/6/2021 17:37:00,Benson Ave & Church St,Bosworth Ave & Howard St,0:23:39,classic_bike,member,24,10,Wednesday
+B770CB54276AE367,10/6/2021 17:14:00,10/6/2021 17:39:00,Franklin St & Illinois St,Southport Ave & Wellington Ave,0:25:34,classic_bike,member,25,10,Wednesday
+0BC8E29CB9E37B0B,10/6/2021 17:14:00,10/6/2021 17:29:00,State St & Van Buren St,May St & Taylor St,0:15:30,classic_bike,member,15,10,Wednesday
+033A8D46D134C363,10/6/2021 17:15:00,10/6/2021 17:24:00,Wells St & Hubbard St,Clark St & Schiller St,0:09:17,classic_bike,member,9,10,Wednesday
+A995F8E1D3D5E57B,10/6/2021 17:15:00,10/6/2021 17:26:00,Clark St & Randolph St,McClurg Ct & Erie St,0:11:28,classic_bike,member,11,10,Wednesday
+99AC6218F26D7915,10/6/2021 17:15:00,10/6/2021 17:30:00,Broadway & Thorndale Ave,Clark St & Leland Ave,0:15:22,classic_bike,member,15,10,Wednesday
+E4BCC6341CBE6391,10/6/2021 17:15:00,10/6/2021 17:30:00,Jefferson St & Monroe St,New St & Illinois St,0:14:52,electric_bike,casual,15,10,Wednesday
+C23F6EED4E52E3BE,10/6/2021 17:15:00,10/6/2021 17:46:00,Franklin St & Jackson Blvd,DuSable Lake Shore Dr & Diversey Pkwy,0:31:20,classic_bike,member,31,10,Wednesday
+4E27D1CED9A88804,10/6/2021 17:16:00,10/6/2021 17:27:00,Broadway & Sheridan Rd,Sheffield Ave & Wellington Ave,0:10:48,classic_bike,member,11,10,Wednesday
+1C2F758E09518C60,10/6/2021 17:16:00,10/6/2021 17:27:00,Clark St & Randolph St,Clark St & Elm St,0:11:02,classic_bike,casual,11,10,Wednesday
+6A7BF0B1BC87413B,10/6/2021 17:16:00,10/6/2021 17:25:00,Mies van der Rohe Way & Chestnut St,Wells St & Huron St,0:08:44,classic_bike,member,9,10,Wednesday
+A49D30238209194E,10/6/2021 17:17:00,10/6/2021 17:27:00,Pine Grove Ave & Irving Park Rd,Broadway & Barry Ave,0:09:18,classic_bike,casual,10,10,Wednesday
+3CA97A2E2AE75BBF,10/6/2021 17:18:00,10/6/2021 17:27:00,Stockton Dr & Wrightwood Ave,Clark St & Lincoln Ave,0:09:10,classic_bike,member,9,10,Wednesday
+9DA5F7F9E31CCFFF,10/6/2021 17:18:00,10/6/2021 17:27:00,Wells St & Evergreen Ave,LaSalle Dr & Huron St,0:08:43,electric_bike,casual,9,10,Wednesday
+BFD4A7DB7CBEF5DE,10/6/2021 17:18:00,10/6/2021 17:24:00,Desplaines St & Randolph St,Daley Center Plaza,0:05:41,electric_bike,member,6,10,Wednesday
+0F628F0987F7572D,10/6/2021 17:18:00,10/6/2021 17:25:00,Clinton St & Washington Blvd,Wells St & Polk St,0:07:00,electric_bike,casual,7,10,Wednesday
+F42E043E76CEBF0D,10/6/2021 17:19:00,10/6/2021 17:47:00,Leavitt St & Division St,State St & Kinzie St,0:27:53,classic_bike,casual,28,10,Wednesday
+D53B7B4C1FDBB90A,10/6/2021 17:19:00,10/6/2021 17:45:00,Canal St & Adams St,Leavitt St & Addison St,0:26:27,electric_bike,member,26,10,Wednesday
+036E7AD3164F113C,10/6/2021 17:19:00,10/6/2021 17:26:00,Clark St & Lincoln Ave,Wells St & Elm St,0:07:04,classic_bike,casual,7,10,Wednesday
+583D8EB9471048D6,10/6/2021 17:20:00,10/6/2021 17:30:00,Wells St & Concord Ln,Clark St & Drummond Pl,0:10:33,classic_bike,casual,10,10,Wednesday
+03195A4FBC26DA14,10/6/2021 17:20:00,10/6/2021 17:28:00,Sheffield Ave & Fullerton Ave,Stockton Dr & Wrightwood Ave,0:07:59,classic_bike,member,8,10,Wednesday
+64117B0556137F06,10/6/2021 17:21:00,10/6/2021 17:28:00,Canal St & Jackson Blvd,State St & Van Buren St,0:07:24,classic_bike,member,7,10,Wednesday
+DCA4DA20422C639C,10/6/2021 17:21:00,10/6/2021 17:47:00,Halsted St & North Branch St,Lincoln Ave & Waveland Ave,0:26:01,classic_bike,member,26,10,Wednesday
+5BFD4A386025210B,10/6/2021 17:21:00,10/6/2021 17:33:00,Sheridan Rd & Lawrence Ave,Racine Ave & Belmont Ave,0:12:23,classic_bike,member,12,10,Wednesday
+B0EBC8D9C6F9FF49,10/6/2021 17:22:00,10/6/2021 17:47:00,Wabash Ave & Grand Ave,Sheffield Ave & Wellington Ave,0:24:27,classic_bike,member,25,10,Wednesday
+C39D6936548D70C6,10/6/2021 17:22:00,10/6/2021 17:29:00,Jefferson St & Monroe St,Green St & Randolph St,0:07:02,classic_bike,member,7,10,Wednesday
+A1AC2E9ABD943F78,10/6/2021 17:23:00,10/6/2021 17:33:00,Kingsbury St & Erie St,Sheffield Ave & Willow St,0:09:58,electric_bike,member,10,10,Wednesday
+56C74EF594C2807E,10/6/2021 17:23:00,10/6/2021 17:33:00,DuSable Lake Shore Dr & Monroe St,Wabash Ave & 9th St,0:10:54,classic_bike,member,10,10,Wednesday
+71714DA8782CEACC,10/6/2021 17:24:00,10/6/2021 18:15:00,DuSable Lake Shore Dr & North Blvd,DuSable Lake Shore Dr & Diversey Pkwy,0:50:28,classic_bike,casual,51,10,Wednesday
+2CDA7DCCE1207B46,10/6/2021 17:24:00,10/6/2021 17:34:00,Orleans St & Merchandise Mart Plaza,Wells St & Elm St,0:10:01,classic_bike,casual,10,10,Wednesday
+60D7897CFF03F72B,10/6/2021 17:24:00,10/6/2021 17:42:00,Michigan Ave & Jackson Blvd,Morgan Ave & 14th Pl,0:18:21,classic_bike,member,18,10,Wednesday
+53A7C359573C005A,10/6/2021 17:24:00,10/6/2021 17:29:00,Ashland Ave & Chicago Ave,Ashland Ave & Lake St,0:05:04,electric_bike,member,5,10,Wednesday
+E4F7172D70629D2B,10/6/2021 17:25:00,10/6/2021 17:44:00,Larrabee St & Webster Ave,Green St & Madison St,0:19:52,classic_bike,member,19,10,Wednesday
+DE812269E9E41F16,10/6/2021 17:25:00,10/6/2021 17:35:00,State St & Randolph St,Clinton St & Washington Blvd,0:09:49,classic_bike,member,10,10,Wednesday
+15512BACF335937D,10/6/2021 17:25:00,10/6/2021 17:46:00,Streeter Dr & Grand Ave,Michigan Ave & Oak St,0:21:13,classic_bike,casual,21,10,Wednesday
+3A649792F77A2F1B,10/6/2021 17:25:00,10/6/2021 17:57:00,Warren Park West,Albany Ave & Montrose Ave,0:32:07,classic_bike,member,32,10,Wednesday
+6B2F5E6A8AFB6C0B,10/6/2021 17:25:00,10/6/2021 17:33:00,Broadway & Ridge Ave,Broadway & Granville Ave,0:08:31,electric_bike,casual,8,10,Wednesday
+74AD948BC2BE925D,10/6/2021 17:25:00,10/6/2021 17:37:00,State St & 35th St,Morgan St & 31st St,0:11:34,classic_bike,member,12,10,Wednesday
+AE8F75E7CC897EE7,10/6/2021 17:26:00,10/6/2021 17:33:00,Clark St & Berwyn Ave,Winthrop Ave & Lawrence Ave,0:07:03,classic_bike,casual,7,10,Wednesday
+87270889A7BEDA07,10/6/2021 17:26:00,10/6/2021 17:37:00,Southport Ave & Belmont Ave,Southport Ave & Belmont Ave,0:10:53,electric_bike,member,11,10,Wednesday
+68BA781352215965,10/6/2021 17:26:00,10/6/2021 17:32:00,Michigan Ave & Lake St,Clark St & Lake St,0:05:16,classic_bike,member,6,10,Wednesday
+AAE9578B20A7699B,10/6/2021 17:26:00,10/6/2021 17:46:00,Streeter Dr & Grand Ave,Michigan Ave & Oak St,0:19:38,classic_bike,member,20,10,Wednesday
+586DDB01C65C9829,10/6/2021 17:26:00,10/6/2021 17:33:00,Paulina St & 18th St,Racine Ave & 18th St,0:06:37,electric_bike,member,7,10,Wednesday
+5DAB6470BDBC87C8,10/6/2021 17:26:00,10/6/2021 17:38:00,Clark St & Randolph St,Canal St & Monroe St,0:11:48,classic_bike,member,12,10,Wednesday
+1D186C06615246DF,10/6/2021 17:26:00,10/6/2021 17:29:00,Clinton St & Madison St,Clinton St & Jackson Blvd,0:02:30,classic_bike,member,3,10,Wednesday
+1FE43F67037EC5F1,10/6/2021 17:26:00,10/6/2021 17:34:00,Fairbanks Ct & Grand Ave,Wells St & Hubbard St,0:08:04,classic_bike,member,8,10,Wednesday
+B48F63956031553D,10/6/2021 17:27:00,10/6/2021 17:33:00,Ravenswood Ave & Lawrence Ave,Clark St & Berwyn Ave,0:06:33,classic_bike,member,6,10,Wednesday
+3356E542C64F3174,10/6/2021 17:27:00,10/6/2021 17:31:00,Broadway & Thorndale Ave,Clark St & Elmdale Ave,0:03:43,classic_bike,member,4,10,Wednesday
+FD451118E18A64C0,10/6/2021 17:27:00,10/6/2021 17:49:00,Dearborn St & Van Buren St,Paulina Ave & North Ave,0:22:08,electric_bike,casual,22,10,Wednesday
+6241E50F3BF4D906,10/6/2021 17:28:00,10/6/2021 17:33:00,Michigan Ave & Pearson St,Rush St & Cedar St,0:04:54,classic_bike,member,5,10,Wednesday
+D316312E520E7B28,10/6/2021 17:28:00,10/6/2021 17:42:00,Clark St & Armitage Ave,Michigan Ave & Oak St,0:14:14,electric_bike,casual,14,10,Wednesday
+7423F40D854188BC,10/6/2021 17:28:00,10/6/2021 17:37:00,Franklin St & Lake St,LaSalle Dr & Huron St,0:08:16,classic_bike,member,9,10,Wednesday
+5162F83CBFF928B9,10/6/2021 17:28:00,10/6/2021 17:51:00,Carpenter St & Huron St,Streeter Dr & Grand Ave,0:22:03,electric_bike,casual,23,10,Wednesday
+4548DAD022124656,10/6/2021 17:28:00,10/6/2021 17:44:00,Lakeview Ave & Fullerton Pkwy,Dusable Harbor,0:15:22,electric_bike,member,16,10,Wednesday
+6F16E5ACE1D710C2,10/6/2021 17:29:00,10/6/2021 18:42:00,DuSable Lake Shore Dr & Monroe St,Montrose Harbor,1:13:21,electric_bike,casual,73,10,Wednesday
+A031D0653E9B0223,10/6/2021 17:29:00,10/6/2021 17:39:00,Lincoln Park Conservatory,Ritchie Ct & Banks St,0:10:07,classic_bike,casual,10,10,Wednesday
+C167954A17EC865E,10/6/2021 17:29:00,10/6/2021 17:35:00,Clinton St & Washington Blvd,Aberdeen St & Monroe St,0:05:54,classic_bike,member,6,10,Wednesday
+CFB74995FCC056C8,10/6/2021 17:29:00,10/6/2021 17:43:00,Shore Dr & 55th St,University Ave & 57th St,0:13:35,classic_bike,casual,14,10,Wednesday
+10BB928EF2F932EF,10/6/2021 17:29:00,10/6/2021 17:45:00,McClurg Ct & Erie St,Indiana Ave & Roosevelt Rd,0:15:51,classic_bike,member,16,10,Wednesday
+4ED51EA9C9A69F28,10/6/2021 17:29:00,10/6/2021 17:44:00,Michigan Ave & Lake St,State St & Randolph St,0:14:42,classic_bike,member,15,10,Wednesday
+EC55E9F41F0400C1,10/6/2021 17:29:00,10/6/2021 17:48:00,Broadway & Berwyn Ave,Sheridan Rd & Loyola Ave,0:18:50,classic_bike,casual,19,10,Wednesday
+124702754E1E70D3,10/6/2021 17:30:00,10/6/2021 17:34:00,Clark St & Leland Ave,Broadway & Wilson - Truman College Vaccination Site,0:04:32,classic_bike,casual,4,10,Wednesday
+438EE18BFED395D5,10/6/2021 17:30:00,10/6/2021 17:39:00,Streeter Dr & Grand Ave,Cityfront Plaza Dr & Pioneer Ct,0:09:02,electric_bike,casual,9,10,Wednesday
+38F605CC78DF7DB0,10/6/2021 17:30:00,10/6/2021 17:49:00,Halsted St & Willow St,Michigan Ave & Oak St,0:19:23,electric_bike,casual,19,10,Wednesday
+26F73EE0D4F8CE7F,10/6/2021 17:30:00,10/6/2021 17:34:00,Clark St & Chicago Ave,Larrabee St & Kingsbury St,0:04:28,classic_bike,member,4,10,Wednesday
+210A3E687D71F360,10/6/2021 17:30:00,10/6/2021 17:40:00,Ogden Ave & Chicago Ave,Clark St & Elm St,0:10:51,classic_bike,casual,10,10,Wednesday
+C17767EEB8C86689,10/6/2021 17:31:00,10/6/2021 17:50:00,Aberdeen St & Randolph St,DuSable Lake Shore Dr & Monroe St,0:18:19,classic_bike,member,19,10,Wednesday
+30E950DF7CC38C8F,10/6/2021 17:32:00,10/6/2021 17:46:00,Clinton St & Lake St,Leavitt St & Chicago Ave,0:14:07,classic_bike,member,14,10,Wednesday
+9926A2F81809BADA,10/6/2021 17:32:00,10/6/2021 17:45:00,Jefferson St & Monroe St,Dearborn St & Erie St,0:13:17,electric_bike,member,13,10,Wednesday
+767330F9456A1A01,10/6/2021 17:32:00,10/6/2021 17:45:00,Sheffield Ave & Wellington Ave,DuSable Lake Shore Dr & Wellington Ave,0:13:03,classic_bike,member,13,10,Wednesday
+B65F6F5D1B5FB079,10/6/2021 17:33:00,10/6/2021 17:44:00,Ashland Ave & Chicago Ave,Ogden Ave & Congress Pkwy,0:10:59,classic_bike,member,11,10,Wednesday
+C68232A5297CF4C4,10/6/2021 17:33:00,10/6/2021 17:44:00,Canal St & Adams St,New St & Illinois St,0:11:39,classic_bike,member,11,10,Wednesday
+3281CB0552062839,10/6/2021 17:34:00,10/6/2021 17:35:00,Clinton St & Tilden St,Clinton St & Tilden St,0:00:29,electric_bike,member,1,10,Wednesday
+36245BDC2747FE2C,10/6/2021 17:34:00,10/6/2021 17:44:00,DuSable Lake Shore Dr & Wellington Ave,Clark St & Lincoln Ave,0:10:14,electric_bike,casual,10,10,Wednesday
+C48B19F08AB9EF56,10/6/2021 17:34:00,10/6/2021 18:03:00,Field Blvd & South Water St,Lakeview Ave & Fullerton Pkwy,0:29:33,classic_bike,member,29,10,Wednesday
+F10047B9A1B2B3B3,10/6/2021 17:35:00,10/6/2021 18:00:00,State St & Kinzie St,Clark St & Drummond Pl,0:24:48,electric_bike,member,25,10,Wednesday
+D0C5B5CD220C4E45,10/6/2021 17:36:00,10/6/2021 17:53:00,Jefferson St & Monroe St,Cityfront Plaza Dr & Pioneer Ct,0:16:49,classic_bike,casual,17,10,Wednesday
+B3C72C0B7C1C0E21,10/6/2021 17:36:00,10/6/2021 17:47:00,Lakeview Ave & Fullerton Pkwy,DuSable Lake Shore Dr & North Blvd,0:11:11,classic_bike,casual,11,10,Wednesday
+81BD9CF45D7CDBB8,10/6/2021 17:36:00,10/6/2021 17:43:00,Elston Ave & Cortland St,Bissell St & Armitage Ave,0:06:53,classic_bike,casual,7,10,Wednesday
+7BBFD4A65BE00DCF,10/6/2021 17:36:00,10/6/2021 17:39:00,Burling St & Diversey Pkwy,Halsted St & Wrightwood Ave,0:02:55,classic_bike,member,3,10,Wednesday
+0D6ABBAA242E3B14,10/6/2021 17:37:00,10/6/2021 18:04:00,Stockton Dr & Wrightwood Ave,Halsted St & Polk St,0:27:02,electric_bike,member,27,10,Wednesday
+8A9FACAA2225DBF9,10/6/2021 17:38:00,10/6/2021 17:42:00,Loomis St & Lexington St,May St & Taylor St,0:03:18,classic_bike,member,4,10,Wednesday
+F56E6D6A4BBE2C15,10/6/2021 17:38:00,10/6/2021 17:58:00,Michigan Ave & 18th St,Michigan Ave & Madison St,0:20:00,classic_bike,member,20,10,Wednesday
+2EA26907D6E119AA,10/6/2021 17:38:00,10/6/2021 17:51:00,Loomis St & Jackson Blvd,Clinton St & Tilden St,0:13:48,classic_bike,member,13,10,Wednesday
+0098E32109F600AF,10/6/2021 17:38:00,10/6/2021 17:43:00,Broadway & Berwyn Ave,Broadway & Thorndale Ave,0:05:06,classic_bike,member,5,10,Wednesday
+7F7063E70E3E73EC,10/6/2021 17:39:00,10/6/2021 17:58:00,New St & Illinois St,Larrabee St & Webster Ave,0:19:08,classic_bike,member,19,10,Wednesday
+A0CBB3AB827F22AF,10/6/2021 17:39:00,10/6/2021 17:58:00,Orleans St & Hubbard St,Leavitt St & North Ave,0:19:20,classic_bike,member,19,10,Wednesday
+949FD960DCF47AAB,10/6/2021 17:39:00,10/6/2021 17:44:00,Ellis Ave & 60th St,University Ave & 57th St,0:04:37,classic_bike,member,5,10,Wednesday
+40A1D31ED48437A2,10/6/2021 17:39:00,10/6/2021 17:54:00,Wells St & Hubbard St,DuSable Lake Shore Dr & North Blvd,0:14:38,classic_bike,member,15,10,Wednesday
+E2C1BE2F988EFCB2,10/6/2021 17:40:00,10/6/2021 17:51:00,Broadway & Waveland Ave,Marine Dr & Ainslie St,0:11:05,classic_bike,member,11,10,Wednesday
+1311013FFE7CF957,10/6/2021 17:41:00,10/6/2021 17:47:00,Sedgwick St & Webster Ave,Clark St & North Ave,0:06:24,classic_bike,member,6,10,Wednesday
+4172DAD5C7D18A2D,10/6/2021 17:41:00,10/6/2021 17:49:00,Clark St & Chicago Ave,DuSable Lake Shore Dr & North Blvd,0:07:28,electric_bike,member,8,10,Wednesday
+AC40F1B7D174173A,10/6/2021 17:41:00,10/6/2021 18:07:00,DuSable Lake Shore Dr & North Blvd,Broadway & Cornelia Ave,0:25:50,classic_bike,member,26,10,Wednesday
+556D3959725C7955,10/6/2021 17:41:00,10/6/2021 17:53:00,Wabash Ave & Roosevelt Rd,Dearborn St & Monroe St,0:11:22,classic_bike,casual,12,10,Wednesday
+AA46DC81C6088542,10/6/2021 17:41:00,10/6/2021 17:49:00,Federal St & Polk St,Wabash Ave & 16th St,0:08:03,classic_bike,member,8,10,Wednesday
+8702E4EEE623F726,10/6/2021 17:41:00,10/6/2021 17:45:00,Calumet Ave & 21st St,Michigan Ave & 14th St,0:04:05,electric_bike,member,4,10,Wednesday
+FD28D10A50BAB5D4,10/6/2021 17:41:00,10/6/2021 18:18:00,Millennium Park,Kilbourn & Roscoe,0:37:46,electric_bike,member,37,10,Wednesday
+BB2304B857E90968,10/6/2021 17:42:00,10/6/2021 17:42:00,Clark St & Armitage Ave,Clark St & Armitage Ave,0:00:02,classic_bike,member,0,10,Wednesday
+C10D5C05ECDEDF5F,10/6/2021 17:42:00,10/6/2021 18:09:00,Seeley Ave & Roscoe St,Ogden Ave & Race Ave,0:26:34,classic_bike,member,27,10,Wednesday
+EF1A70C21BC2206A,10/6/2021 17:43:00,10/6/2021 17:47:00,Lincoln Ave & Fullerton Ave,Racine Ave & Fullerton Ave,0:03:09,classic_bike,casual,4,10,Wednesday
+45313AFE1A8835FF,10/6/2021 17:43:00,10/6/2021 18:06:00,Michigan Ave & Lake St,DuSable Lake Shore Dr & North Blvd,0:23:12,classic_bike,casual,23,10,Wednesday
+8420FAFDF0B4B0B3,10/6/2021 17:43:00,10/6/2021 18:13:00,Clarendon Ave & Junior Ter,Michigan Ave & Washington St,0:30:28,electric_bike,member,30,10,Wednesday
+C0DE313E424F1FC2,10/6/2021 17:43:00,10/6/2021 18:07:00,Orleans St & Hubbard St,Ashland Ave & Wellington Ave,0:23:36,classic_bike,member,24,10,Wednesday
+A2E765C630DDD8E4,10/6/2021 17:43:00,10/6/2021 17:51:00,Clark St & Wrightwood Ave,Wilton Ave & Belmont Ave,0:07:46,classic_bike,member,8,10,Wednesday
+5C878C5500ADEF64,10/6/2021 17:44:00,10/6/2021 17:49:00,State St & Pearson St,DuSable Lake Shore Dr & North Blvd,0:04:48,electric_bike,member,5,10,Wednesday
+83D703A007FC51C9,10/6/2021 17:44:00,10/6/2021 17:51:00,Loomis St & Lexington St,Halsted St & Maxwell St,0:07:03,classic_bike,member,7,10,Wednesday
+12EAF3D5A194DB6B,10/6/2021 17:44:00,10/6/2021 17:59:00,Kingsbury St & Kinzie St,DuSable Lake Shore Dr & North Blvd,0:14:53,classic_bike,casual,15,10,Wednesday
+051DF04814D92A1A,10/6/2021 17:44:00,10/6/2021 17:51:00,Michigan Ave & Lake St,Millennium Park,0:06:49,docked_bike,casual,7,10,Wednesday
+0DF2F9F8CC020F74,10/6/2021 17:44:00,10/6/2021 17:52:00,Federal St & Polk St,Michigan Ave & 18th St,0:07:56,classic_bike,member,8,10,Wednesday
+918F37C75069FE21,10/6/2021 17:44:00,10/6/2021 17:56:00,Peoria St & Jackson Blvd,Federal St & Polk St,0:12:31,classic_bike,member,12,10,Wednesday
+4C712378E8D1A971,10/6/2021 17:44:00,10/6/2021 17:59:00,Western Ave & Monroe St,Pulaski Rd & Lake St,0:14:10,electric_bike,member,15,10,Wednesday
+930C2CC36022269F,10/6/2021 17:44:00,10/6/2021 17:55:00,Sheffield Ave & Webster Ave,DuSable Lake Shore Dr & North Blvd,0:11:00,electric_bike,casual,11,10,Wednesday
+0341EC0474F77213,10/6/2021 17:45:00,10/6/2021 17:57:00,Michigan Ave & Washington St,Canal St & Adams St,0:12:00,classic_bike,casual,12,10,Wednesday
+D938F31C8587953E,10/6/2021 17:45:00,10/6/2021 17:56:00,Michigan Ave & Pearson St,Orleans St & Merchandise Mart Plaza,0:10:35,classic_bike,member,11,10,Wednesday
+DA628D35B686C7A3,10/6/2021 17:45:00,10/6/2021 17:45:00,Cityfront Plaza Dr & Pioneer Ct,Cityfront Plaza Dr & Pioneer Ct,0:00:20,electric_bike,member,0,10,Wednesday
+D8E9F91D87D2B102,10/6/2021 17:45:00,10/6/2021 17:53:00,Wilton Ave & Diversey Pkwy,Sheffield Ave & Waveland Ave,0:08:28,electric_bike,member,8,10,Wednesday
+51E301D196083D94,10/6/2021 17:45:00,10/6/2021 17:55:00,Canal St & Madison St,Stetson Ave & South Water St,0:09:53,classic_bike,member,10,10,Wednesday
+6DEA6FEAB9B63857,10/6/2021 17:46:00,10/6/2021 17:56:00,Pine Grove Ave & Irving Park Rd,Clark St & Wellington Ave,0:10:26,classic_bike,member,10,10,Wednesday
+A246476CFEF26B1C,10/6/2021 17:46:00,10/6/2021 18:18:00,California Ave & Division St,Kingsbury St & Kinzie St,0:31:47,classic_bike,member,32,10,Wednesday
+CC82F712C03DD0F0,10/6/2021 17:46:00,10/6/2021 17:51:00,Ellis Ave & 53rd St,Woodlawn Ave & 55th St,0:04:35,classic_bike,member,5,10,Wednesday
+9700E4FDF865BF7D,10/6/2021 17:46:00,10/6/2021 17:57:00,Clinton St & Madison St,Rush St & Hubbard St,0:10:41,electric_bike,member,11,10,Wednesday
+4DA32A396B698A4F,10/6/2021 17:46:00,10/6/2021 17:51:00,Clarendon Ave & Gordon Ter,Montrose Harbor,0:04:47,classic_bike,member,5,10,Wednesday
+4A4E0F6F93D421E7,10/6/2021 17:46:00,10/6/2021 18:00:00,Halsted St & Wrightwood Ave,Ashland Ave & Division St,0:13:55,electric_bike,member,14,10,Wednesday
+F8F9AD84B72B3901,10/6/2021 17:47:00,10/6/2021 18:08:00,Clark St & Wrightwood Ave,Honore St & Division St,0:20:51,classic_bike,member,21,10,Wednesday
+D5098ED7FA91B359,10/6/2021 17:47:00,10/6/2021 17:55:00,Wabash Ave & Roosevelt Rd,Clinton St & 18th St,0:08:32,classic_bike,member,8,10,Wednesday
+D069539589D0696C,10/6/2021 17:47:00,10/6/2021 18:00:00,Clark St & Wellington Ave,DuSable Lake Shore Dr & North Blvd,0:13:16,electric_bike,member,13,10,Wednesday
+D04489E8E7C6220A,10/6/2021 17:47:00,10/6/2021 18:01:00,Desplaines St & Jackson Blvd,Halsted St & Clybourn Ave,0:13:59,electric_bike,member,14,10,Wednesday
+3026C64DAFCC8A6E,10/6/2021 17:48:00,10/6/2021 18:15:00,Calumet Ave & 18th St,Wabash Ave & Grand Ave,0:26:37,electric_bike,casual,27,10,Wednesday
+1BDBC4B98CFF2135,10/6/2021 17:48:00,10/6/2021 17:58:00,Streeter Dr & Grand Ave,DuSable Lake Shore Dr & North Blvd,0:09:53,classic_bike,member,10,10,Wednesday
+7CEC8BFF6871FC0D,10/6/2021 17:48:00,10/6/2021 18:12:00,Mies van der Rohe Way & Chestnut St,Sheffield Ave & Waveland Ave,0:23:56,classic_bike,member,24,10,Wednesday
+A0FBE3532B4ED5B7,10/6/2021 17:48:00,10/6/2021 18:14:00,Clinton St & Madison St,Larrabee St & Armitage Ave,0:26:21,electric_bike,member,26,10,Wednesday
+DB9BFEA5BAC74D49,10/6/2021 17:48:00,10/6/2021 18:02:00,Larrabee St & Webster Ave,Damen Ave & Cortland St,0:13:27,electric_bike,member,14,10,Wednesday
+E880BE872C45058D,10/6/2021 17:48:00,10/6/2021 17:59:00,Southport Ave & Wellington Ave,Clark St & Wrightwood Ave,0:10:45,classic_bike,casual,11,10,Wednesday
+A5073991914D70AE,10/6/2021 17:48:00,10/6/2021 17:52:00,Sheridan Rd & Noyes St (NU),Evanston Civic Center,0:03:58,classic_bike,casual,4,10,Wednesday
+2F0E07254D9A46A2,10/6/2021 17:49:00,10/6/2021 18:02:00,Streeter Dr & Grand Ave,Streeter Dr & Grand Ave,0:13:23,classic_bike,casual,13,10,Wednesday
+C01897CDD62E3C6E,10/6/2021 17:49:00,10/6/2021 18:05:00,Cherry Ave & Blackhawk St,Western Ave & Walton St,0:15:10,docked_bike,casual,16,10,Wednesday
+CA6811F2033C1FAC,10/6/2021 17:50:00,10/6/2021 18:13:00,Clark St & Grace St,DuSable Lake Shore Dr & North Blvd,0:22:55,classic_bike,casual,23,10,Wednesday
+C6CC4D6B1010AEB2,10/6/2021 17:50:00,10/6/2021 18:04:00,Ashland Ave & Blackhawk St,Sedgwick St & North Ave,0:14:24,classic_bike,member,14,10,Wednesday
+7C945B763CA3B466,10/6/2021 17:51:00,10/6/2021 18:12:00,Spaulding Ave & Armitage Ave,Clark St & Armitage Ave,0:21:41,electric_bike,member,21,10,Wednesday
+62A58E96EE89A247,10/6/2021 17:51:00,10/6/2021 17:56:00,University Ave & 57th St,Ellis Ave & 60th St,0:04:35,classic_bike,member,5,10,Wednesday
+5BD2CB9981A6E7E5,10/6/2021 17:51:00,10/6/2021 18:05:00,Damen Ave & Chicago Ave,Seeley Ave & Roscoe St,0:13:51,electric_bike,member,14,10,Wednesday
+786926D56AF8754B,10/6/2021 17:52:00,10/6/2021 17:56:00,LaSalle Dr & Huron St,Clark St & Elm St,0:04:23,classic_bike,member,4,10,Wednesday
+D3BD0AC3B620A628,10/6/2021 17:52:00,10/6/2021 18:11:00,Canal St & Harrison St,McCormick Place,0:19:41,classic_bike,member,19,10,Wednesday
+0271C55CCA7B4013,10/6/2021 17:52:00,10/6/2021 18:10:00,Adler Planetarium,Millennium Park,0:17:38,classic_bike,member,18,10,Wednesday
+22BA6602487E6286,10/6/2021 17:52:00,10/6/2021 17:58:00,Eckhart Park,Milwaukee Ave & Grand Ave,0:05:04,classic_bike,member,6,10,Wednesday
+11B374071568C7A6,10/6/2021 17:53:00,10/6/2021 18:02:00,LaSalle St & Adams St,Orleans St & Hubbard St,0:08:49,classic_bike,member,9,10,Wednesday
+474DBE745CDA5369,10/6/2021 17:53:00,10/6/2021 18:04:00,Halsted St & Clybourn Ave,Eckhart Park,0:10:42,classic_bike,member,11,10,Wednesday
+1D924E6F87CF0F90,10/6/2021 17:53:00,10/6/2021 18:02:00,Desplaines St & Jackson Blvd,Milwaukee Ave & Grand Ave,0:08:45,classic_bike,member,9,10,Wednesday
+C650DF7B0E999364,10/6/2021 17:53:00,10/6/2021 18:10:00,Drake Ave & Montrose Ave,Drake Ave & Montrose Ave,0:16:52,classic_bike,member,17,10,Wednesday
+029684666F2EEA1B,10/6/2021 17:53:00,10/6/2021 17:56:00,Christiana Ave & Lawrence Ave,Kedzie Ave & Foster Ave,0:03:30,electric_bike,member,3,10,Wednesday
+DE32DFEB1E172BF3,10/6/2021 17:54:00,10/6/2021 18:36:00,DuSable Lake Shore Dr & Belmont Ave,DuSable Lake Shore Dr & Belmont Ave,0:42:21,docked_bike,casual,42,10,Wednesday
+A7475DBEBB4B2EAF,10/6/2021 17:54:00,10/6/2021 17:58:00,Michigan Ave & 14th St,Michigan Ave & 8th St,0:04:33,classic_bike,casual,4,10,Wednesday
+5257330151E2A855,10/6/2021 17:55:00,10/6/2021 18:07:00,Western Ave & Congress Pkwy,Wood St & Taylor St (Temp),0:11:32,classic_bike,member,12,10,Wednesday
+B7A1A15644BEBAF3,10/6/2021 17:55:00,10/6/2021 18:07:00,DuSable Lake Shore Dr & Monroe St,Streeter Dr & Grand Ave,0:12:07,electric_bike,casual,12,10,Wednesday
+3D305CAF8A61EB74,10/6/2021 17:55:00,10/6/2021 18:10:00,Clinton St & Washington Blvd,New St & Illinois St,0:14:45,classic_bike,member,15,10,Wednesday
+BB5469E2659457E7,10/6/2021 17:55:00,10/6/2021 18:24:00,Larrabee St & Kingsbury St,Walsh Park,0:28:45,classic_bike,member,29,10,Wednesday
+0BF33073C7DCA7A9,10/6/2021 17:57:00,10/6/2021 18:02:00,Ellis Ave & 60th St,Ellis Ave & 55th St,0:04:35,classic_bike,casual,5,10,Wednesday
+C3FFB1A21057C009,10/6/2021 17:57:00,10/6/2021 18:11:00,Jefferson St & Monroe St,Columbus Dr & Randolph St,0:14:48,classic_bike,casual,14,10,Wednesday
+C3D533D4A7CF5E4B,10/6/2021 17:57:00,10/6/2021 18:18:00,Franklin St & Chicago Ave,Damen Ave & Division St,0:21:36,classic_bike,member,21,10,Wednesday
+D32A0A5509C6BEF3,10/6/2021 17:58:00,10/6/2021 18:05:00,Dearborn St & Adams St,Green St & Madison St,0:06:50,electric_bike,member,7,10,Wednesday
+2AED653ABFDF9275,10/6/2021 17:58:00,10/6/2021 18:29:00,Ashland Ave & Blackhawk St,Ravenswood Ave & Irving Park Rd,0:31:40,classic_bike,member,31,10,Wednesday
+AC01391F62BB1AE6,10/6/2021 17:58:00,10/6/2021 18:05:00,Morgan St & Lake St,Kingsbury St & Kinzie St,0:07:39,classic_bike,member,7,10,Wednesday
+62B7FCCB73D1FCD2,10/6/2021 17:59:00,10/6/2021 18:15:00,Theater on the Lake,Clark St & Schiller St,0:16:10,classic_bike,member,16,10,Wednesday
+900838E91CEAC5ED,10/6/2021 18:00:00,10/6/2021 18:01:00,Fairbanks Ct & Grand Ave,Fairbanks St & Superior St,0:01:57,classic_bike,member,1,10,Wednesday
+159A32313304A5BC,10/6/2021 18:00:00,10/6/2021 18:04:00,Clark St & Wellington Ave,Clark St & Drummond Pl,0:04:12,classic_bike,member,4,10,Wednesday
+7F08CA941AFC98EE,10/6/2021 18:00:00,10/6/2021 18:16:00,Southport Ave & Waveland Ave,Clark St & Wellington Ave,0:16:06,classic_bike,member,16,10,Wednesday
+1F7DD4635FED76C7,10/6/2021 18:01:00,10/6/2021 18:34:00,DuSable Lake Shore Dr & Ohio St,Ashland Ave & Grace St,0:32:48,classic_bike,member,33,10,Wednesday
+C8D511D200802EDA,10/6/2021 18:01:00,10/6/2021 18:11:00,Sheffield Ave & Willow St,Halsted St & North Branch St,0:10:12,classic_bike,casual,10,10,Wednesday
+3AFB9835D79DD3B2,10/6/2021 18:02:00,10/6/2021 18:47:00,Michigan Ave & Jackson Blvd,Broadway & Thorndale Ave,0:45:02,electric_bike,casual,45,10,Wednesday
+D7B494D88CE77423,10/6/2021 18:02:00,10/6/2021 18:06:00,Lincoln Ave & Belmont Ave,Lincoln Ave & Diversey Pkwy,0:04:53,classic_bike,member,4,10,Wednesday
+3FFDBABE17F93C5A,10/6/2021 18:03:00,10/6/2021 18:14:00,Franklin St & Adams St (Temp),Clinton St & Jackson Blvd,0:11:32,classic_bike,member,11,10,Wednesday
+C222F101C9331C30,10/6/2021 18:03:00,10/6/2021 18:17:00,Rush St & Cedar St,Desplaines St & Kinzie St,0:14:06,classic_bike,member,14,10,Wednesday
+9635C265C95F5F0F,10/6/2021 18:03:00,10/6/2021 18:26:00,Wabash Ave & 9th St,Sedgwick St & Schiller St,0:23:17,electric_bike,member,23,10,Wednesday
+5B83AD7DFAB697C6,10/6/2021 18:04:00,10/6/2021 18:11:00,Paulina St & 18th St,May St & Cullerton St,0:07:08,classic_bike,casual,7,10,Wednesday
+2C6DDA1824CED6EC,10/6/2021 18:04:00,10/6/2021 18:08:00,Wilton Ave & Belmont Ave,Halsted St & Roscoe St,0:04:28,classic_bike,casual,4,10,Wednesday
+A9C2C7ABDADEF166,10/6/2021 18:05:00,10/6/2021 18:19:00,Damen Ave & Pierce Ave,Ogden Ave & Race Ave,0:13:53,classic_bike,member,14,10,Wednesday
+B11E7C6F18F411FF,10/6/2021 18:06:00,10/6/2021 18:45:00,Sheffield Ave & Fullerton Ave,Wood St & Milwaukee Ave,0:39:18,classic_bike,casual,39,10,Wednesday
+7F48959CC0F1B739,10/6/2021 18:06:00,10/6/2021 18:17:00,Paulina Ave & North Ave,Carpenter St & Huron St,0:11:18,classic_bike,member,11,10,Wednesday
+F2C53DCEB7F9AD75,10/6/2021 18:06:00,10/6/2021 18:06:00,Clark St & Berwyn Ave,Clark St & Berwyn Ave,0:00:46,electric_bike,casual,0,10,Wednesday
+5B14ABD82DDB7CE6,10/6/2021 18:07:00,10/6/2021 18:46:00,Western Ave & Division St,Wood St & Chicago Ave,0:39:39,classic_bike,member,39,10,Wednesday
+1552E58381307A8C,10/6/2021 18:07:00,10/6/2021 18:27:00,Sheffield Ave & Wellington Ave,Lakefront Trail & Wilson Ave,0:20:44,classic_bike,member,20,10,Wednesday
+55471EE85852F1BA,10/6/2021 18:07:00,10/6/2021 18:21:00,DuSable Lake Shore Dr & Diversey Pkwy,Larrabee St & Armitage Ave,0:14:07,classic_bike,member,14,10,Wednesday
+75904E96F9E96BDF,10/6/2021 18:07:00,10/6/2021 18:26:00,Ritchie Ct & Banks St,Burling St & Diversey Pkwy,0:19:00,electric_bike,casual,19,10,Wednesday
+001660F7A8ABFE1C,10/6/2021 18:07:00,10/6/2021 18:08:00,Fairbanks Ct & Grand Ave,Fairbanks St & Superior St,0:01:28,electric_bike,member,1,10,Wednesday
+BE8A20DAF21E3429,10/6/2021 18:08:00,10/6/2021 18:27:00,Broadway & Sheridan Rd,Racine Ave & Fullerton Ave,0:19:43,electric_bike,casual,19,10,Wednesday
+847E7E5E86DA40BE,10/6/2021 18:09:00,10/6/2021 18:12:00,Clark St & Columbia Ave,Sheridan Rd & Loyola Ave,0:03:07,electric_bike,member,3,10,Wednesday
+AF13C39D67CF693E,10/6/2021 18:09:00,10/6/2021 18:18:00,Wells St & Hubbard St,Ogden Ave & Chicago Ave,0:09:15,classic_bike,casual,9,10,Wednesday
+8E1938005BB5C104,10/6/2021 18:09:00,10/6/2021 18:17:00,Federal St & Polk St,Clark St & Lake St,0:08:13,classic_bike,member,8,10,Wednesday
+52B6ED2059B8CDC3,10/6/2021 18:11:00,10/6/2021 18:23:00,Wilton Ave & Diversey Pkwy,Clark St & Drummond Pl,0:12:27,classic_bike,member,12,10,Wednesday
+9C6D776AB2CC516B,10/6/2021 18:11:00,10/6/2021 18:22:00,Southport Ave & Belmont Ave,DuSable Lake Shore Dr & Belmont Ave,0:10:52,electric_bike,casual,11,10,Wednesday
+002E54FC84E59B9B,10/6/2021 18:12:00,10/6/2021 18:23:00,Wabash Ave & Grand Ave,Clinton St & Washington Blvd,0:10:59,classic_bike,member,11,10,Wednesday
+7678F8F8A390EF3C,10/6/2021 18:12:00,10/6/2021 18:12:00,Damen Ave & Pierce Ave,Damen Ave & Pierce Ave,0:00:42,electric_bike,member,0,10,Wednesday
+AE09A08B3A783F5E,10/6/2021 18:12:00,10/6/2021 18:14:00,Central Park Ave & Bloomingdale Ave,Central Park Ave & North Ave,0:01:46,classic_bike,member,2,10,Wednesday
+93D79628A8A67DF7,10/6/2021 18:12:00,10/6/2021 18:33:00,Montrose Harbor,Stockton Dr & Wrightwood Ave,0:21:38,classic_bike,member,21,10,Wednesday
+052BA8023455B958,10/6/2021 18:13:00,10/6/2021 18:20:00,Bissell St & Armitage Ave,Elston Ave & Cortland St,0:06:22,classic_bike,casual,7,10,Wednesday
+CFEE4748A8A1BDEB,10/6/2021 18:13:00,10/6/2021 18:24:00,DuSable Lake Shore Dr & Monroe St,Fairbanks St & Superior St,0:11:23,classic_bike,member,11,10,Wednesday
+89A8FDEA7F3CF60C,10/6/2021 18:14:00,10/6/2021 18:24:00,Clark St & Newport St,Sheridan Rd & Irving Park Rd,0:09:51,classic_bike,casual,10,10,Wednesday
+7E7B3E8BD0093DB4,10/6/2021 18:14:00,10/6/2021 18:19:00,Clark St & Elm St,DuSable Lake Shore Dr & North Blvd,0:05:14,electric_bike,member,5,10,Wednesday
+7B27C87B1D2BEB8D,10/6/2021 18:14:00,10/6/2021 18:29:00,DuSable Lake Shore Dr & Ohio St,Larrabee St & Armitage Ave,0:15:50,classic_bike,casual,15,10,Wednesday
+4320A78DE21718EA,10/6/2021 18:14:00,10/6/2021 18:20:00,Clinton St & Washington Blvd,Kingsbury St & Kinzie St,0:05:36,classic_bike,member,6,10,Wednesday
+7002E94ACDA5E0D1,10/6/2021 18:15:00,10/6/2021 18:31:00,Damen Ave & Chicago Ave,Hermitage Ave & Polk St,0:16:02,classic_bike,member,16,10,Wednesday
+CA4F23A674110130,10/6/2021 18:15:00,10/6/2021 18:25:00,Racine Ave & Fullerton Ave,Burling St & Diversey Pkwy,0:09:06,classic_bike,member,10,10,Wednesday
+6F009B33A31F708F,10/6/2021 18:16:00,10/6/2021 18:25:00,Smith Park,Damen Ave & Pierce Ave,0:08:30,electric_bike,casual,9,10,Wednesday
+60C66F64E1022AEA,10/6/2021 18:16:00,10/6/2021 18:30:00,Greenview Ave & Diversey Pkwy,Clark St & Lincoln Ave,0:14:18,classic_bike,member,14,10,Wednesday
+FF7B3341E64EC4F1,10/6/2021 18:16:00,10/6/2021 18:34:00,Streeter Dr & Grand Ave,DuSable Lake Shore Dr & Belmont Ave,0:18:23,electric_bike,member,18,10,Wednesday
+513F6542FA69A724,10/6/2021 18:16:00,10/6/2021 18:33:00,Damen Ave & Chicago Ave,Green St & Randolph St,0:16:38,classic_bike,member,17,10,Wednesday
+F1D89FCBC1A2EA43,10/6/2021 18:17:00,10/6/2021 18:36:00,Lakefront Trail & Wilson Ave,Broadway & Argyle St,0:19:16,classic_bike,member,19,10,Wednesday
+640669DAC17BC1DB,10/6/2021 18:17:00,10/6/2021 18:17:00,Kedzie Ave & Palmer Ct,Kedzie Ave & Palmer Ct,0:00:04,classic_bike,member,0,10,Wednesday
+B93A656DC37C68DD,10/6/2021 18:18:00,10/6/2021 18:39:00,State St & Kinzie St,Damen Ave & Division St,0:21:06,classic_bike,member,21,10,Wednesday
+EEF6B2C8D7DA28E2,10/6/2021 18:18:00,10/6/2021 18:41:00,Central Park Ave & Elbridge Ave,Wilton Ave & Diversey Pkwy,0:22:47,electric_bike,member,23,10,Wednesday
+1EBFDF4C23039376,10/6/2021 18:18:00,10/6/2021 18:40:00,Dayton St & North Ave,Sheridan Rd & Buena Ave,0:22:38,classic_bike,member,22,10,Wednesday
+6A4FF2A9D88B8443,10/6/2021 18:18:00,10/6/2021 18:35:00,Racine Ave & Belmont Ave,Broadway & Ridge Ave,0:17:23,electric_bike,casual,17,10,Wednesday
+4BC9CF20BB5EE0D3,10/6/2021 18:18:00,10/6/2021 18:28:00,Wilton Ave & Belmont Ave,Clark St & Leland Ave,0:10:39,electric_bike,member,10,10,Wednesday
+FF625C062D6C996E,10/6/2021 18:19:00,10/6/2021 18:22:00,Federal St & Polk St,Delano Ct & Roosevelt Rd,0:03:08,electric_bike,member,3,10,Wednesday
+0CE668903BBAE3AB,10/6/2021 18:19:00,10/6/2021 18:22:00,Wilton Ave & Diversey Pkwy,Clark St & Drummond Pl,0:03:51,classic_bike,member,3,10,Wednesday
+B66CFA37F3FB8600,10/6/2021 18:19:00,10/6/2021 18:28:00,Dearborn St & Erie St,DuSable Lake Shore Dr & North Blvd,0:08:58,classic_bike,member,9,10,Wednesday
+3A2D0382D622220F,10/6/2021 18:19:00,10/6/2021 18:31:00,Wells St & Concord Ln,New St & Illinois St,0:11:19,electric_bike,member,12,10,Wednesday
+71E0FAD1B3ECAF8C,10/6/2021 18:20:00,10/6/2021 18:30:00,Larrabee St & Webster Ave,Ritchie Ct & Banks St,0:09:53,classic_bike,member,10,10,Wednesday
+DA38CA38C79032EE,10/6/2021 18:20:00,10/6/2021 18:31:00,Clarendon Ave & Junior Ter,Hampden Ct & Diversey Ave,0:11:02,electric_bike,casual,11,10,Wednesday
+27F0B3FDF6FB2A98,10/6/2021 18:20:00,10/6/2021 18:28:00,Wallace St & 35th St,State St & 33rd St,0:08:10,classic_bike,member,8,10,Wednesday
+182238614EB31938,10/6/2021 18:21:00,10/6/2021 18:25:00,Larrabee St & Webster Ave,Halsted St & Dickens Ave,0:03:41,classic_bike,member,4,10,Wednesday
+C98E80C26F56C07E,10/6/2021 18:21:00,10/6/2021 18:33:00,Milwaukee Ave & Rockwell St,Ashland Ave & Division St,0:12:22,electric_bike,member,12,10,Wednesday
+4E5CF443DD528215,10/6/2021 18:21:00,10/6/2021 18:36:00,Indiana Ave & 26th St,Michigan Ave & 8th St,0:15:00,classic_bike,casual,15,10,Wednesday
+9743153FCA7DA900,10/6/2021 18:21:00,10/6/2021 18:26:00,Broadway & Wilson - Truman College Vaccination Site,Clark St & Leland Ave,0:05:12,electric_bike,casual,5,10,Wednesday
+30141328AB4B879D,10/6/2021 18:23:00,10/6/2021 18:29:00,Clark St & Lake St,Financial Pl & Ida B Wells Dr,0:06:06,classic_bike,member,6,10,Wednesday
+28C509801743B8E9,10/6/2021 18:23:00,10/6/2021 19:33:00,DuSable Lake Shore Dr & Belmont Ave,Shore Dr & 55th St,1:10:52,classic_bike,member,70,10,Wednesday
+2DB6386ED82351D8,10/6/2021 18:23:00,10/6/2021 18:29:00,Wilton Ave & Belmont Ave,Pine Grove Ave & Waveland Ave,0:06:15,classic_bike,member,6,10,Wednesday
+364D9CEDF3F6EBBE,10/6/2021 18:25:00,10/6/2021 18:27:00,Franklin St & Illinois St,Wells St & Hubbard St,0:01:28,classic_bike,member,2,10,Wednesday
+44FC327DB873F056,10/6/2021 18:25:00,10/6/2021 18:39:00,Bissell St & Armitage Ave,Kingsbury St & Kinzie St,0:14:00,classic_bike,casual,14,10,Wednesday
+13E3FF8758F56353,10/6/2021 18:25:00,10/6/2021 18:29:00,Aberdeen St & Monroe St,Ada St & Washington Blvd,0:03:18,classic_bike,member,4,10,Wednesday
+239FC552FD6509F4,10/6/2021 18:26:00,10/6/2021 18:36:00,Wabash Ave & Roosevelt Rd,Calumet Ave & 21st St,0:09:06,electric_bike,casual,10,10,Wednesday
+207541DF8440BB1C,10/6/2021 18:26:00,10/6/2021 18:35:00,Broadway & Belmont Ave,Southport Ave & Belmont Ave,0:08:41,classic_bike,member,9,10,Wednesday
+6C04FD2D525D1032,10/6/2021 18:27:00,10/6/2021 18:48:00,Michigan Ave & Madison St,Clinton St & 18th St,0:20:33,classic_bike,casual,21,10,Wednesday
+CB03412FCBC6C17A,10/6/2021 18:27:00,10/6/2021 18:33:00,LaSalle St & Jackson Blvd,Clinton St & Washington Blvd,0:05:51,classic_bike,member,6,10,Wednesday
+C774288DF5F01593,10/6/2021 18:28:00,10/6/2021 18:37:00,Dearborn St & Erie St,Green St & Madison St,0:08:30,electric_bike,member,9,10,Wednesday
+70057F9266B9FB7D,10/6/2021 18:29:00,10/6/2021 18:36:00,Milwaukee Ave & Wabansia Ave,Milwaukee Ave & Rockwell St,0:06:40,classic_bike,member,7,10,Wednesday
+9B70037F0FFA3B26,10/6/2021 18:29:00,10/6/2021 18:42:00,Dearborn St & Adams St,Rush St & Cedar St,0:12:19,electric_bike,member,13,10,Wednesday
+9126E65321FEA94B,10/6/2021 18:29:00,10/6/2021 18:33:00,Clark St & Schiller St,Wells St & Walton St,0:04:36,classic_bike,member,4,10,Wednesday
+1A807673BC7A8042,10/6/2021 18:30:00,10/6/2021 18:36:00,Rush St & Hubbard St,Franklin St & Chicago Ave,0:06:00,classic_bike,casual,6,10,Wednesday
+AAC887482B955B0F,10/6/2021 18:31:00,10/6/2021 18:44:00,Milwaukee Ave & Wabansia Ave,Racine Ave & Fullerton Ave,0:13:15,electric_bike,member,13,10,Wednesday
+1BA67171E7DF095F,10/6/2021 18:31:00,10/6/2021 18:38:00,Millennium Park,DuSable Lake Shore Dr & Monroe St,0:06:04,classic_bike,member,7,10,Wednesday
+4CABF3E114CC2EAC,10/6/2021 18:32:00,10/6/2021 18:45:00,Pine Grove Ave & Irving Park Rd,Halsted St & Dickens Ave,0:13:20,electric_bike,member,13,10,Wednesday
+0F203CCB09F15902,10/6/2021 18:32:00,10/6/2021 18:44:00,Elizabeth (May) St & Fulton St,Sedgwick St & Huron St,0:12:16,classic_bike,member,12,10,Wednesday
+AE02F528D229FCEB,10/6/2021 18:32:00,10/6/2021 19:06:00,Theater on the Lake,Theater on the Lake,0:34:15,docked_bike,casual,34,10,Wednesday
+40D231FA5C4234E5,10/6/2021 18:33:00,10/6/2021 18:56:00,St. Clair St & Erie St,LaSalle St & Washington St,0:23:17,classic_bike,member,23,10,Wednesday
+44AB855D4E90133E,10/6/2021 18:33:00,10/6/2021 18:43:00,900 W Harrison St,Halsted St & Maxwell St,0:09:49,classic_bike,member,10,10,Wednesday
+F6E7B270C3F4DBF8,10/6/2021 18:33:00,10/6/2021 18:45:00,Dusable Harbor,Burnham Harbor,0:12:19,classic_bike,member,12,10,Wednesday
+FDD9A834CB0B07B4,10/6/2021 18:33:00,10/6/2021 18:44:00,Wells St & Concord Ln,St. Clair St & Erie St,0:11:32,classic_bike,casual,11,10,Wednesday
+8E4B5A54D554B2C9,10/6/2021 18:34:00,10/6/2021 18:48:00,Sheffield Ave & Willow St,Noble St & Milwaukee Ave,0:14:39,classic_bike,member,14,10,Wednesday
+A63508CC8AA6C33F,10/6/2021 18:34:00,10/6/2021 19:05:00,Sheridan Rd & Loyola Ave,Broadway & Thorndale Ave,0:30:59,classic_bike,member,31,10,Wednesday
+89FC896245058844,10/6/2021 18:34:00,10/6/2021 18:42:00,Wells St & Elm St,Clifton Ave & Armitage Ave,0:08:34,electric_bike,casual,8,10,Wednesday
+BBF078A53A5E3EA7,10/6/2021 18:35:00,10/6/2021 18:37:00,Wabash Ave & Roosevelt Rd,Michigan Ave & 14th St,0:02:18,classic_bike,member,2,10,Wednesday
+7498C1AB3024EE5C,10/6/2021 18:35:00,10/6/2021 18:51:00,Clark St & Wrightwood Ave,Sheffield Ave & Kingsbury St,0:16:22,classic_bike,casual,16,10,Wednesday
+D6ED31C65430A81C,10/6/2021 18:35:00,10/6/2021 18:44:00,Larrabee St & Division St,Dearborn Pkwy & Delaware Pl,0:08:30,classic_bike,casual,9,10,Wednesday
+BD0606F1313749C0,10/6/2021 18:36:00,10/6/2021 18:40:00,Elston Ave & Cortland St,Damen Ave & Cortland St,0:04:19,classic_bike,member,4,10,Wednesday
+73BAC1B5817D1720,10/6/2021 18:37:00,10/6/2021 18:43:00,Ellis Ave & 58th St,Ellis Ave & 53rd St,0:06:27,classic_bike,member,6,10,Wednesday
+A92FB8BCCFDA822A,10/6/2021 18:37:00,10/6/2021 19:01:00,DuSable Lake Shore Dr & Monroe St,Clark St & Wellington Ave,0:23:14,electric_bike,member,24,10,Wednesday
+FD0C25D74DBF09C8,10/6/2021 18:37:00,10/6/2021 18:40:00,Albany Ave & Montrose Ave,Kedzie Ave & Leland Ave,0:03:12,classic_bike,member,3,10,Wednesday
+4E45309EAF622ECC,10/6/2021 18:37:00,10/6/2021 18:47:00,Lincoln Ave & Roscoe St,Broadway & Cornelia Ave,0:10:25,classic_bike,member,10,10,Wednesday
+ECBCCE4334C46352,10/6/2021 18:38:00,10/6/2021 18:57:00,May St & Taylor St,Emerald Ave & 31st St,0:19:56,electric_bike,member,19,10,Wednesday
+C12AE9F06D07356B,10/6/2021 18:38:00,10/6/2021 18:51:00,Wood St & Augusta Blvd,Winchester Ave & Elston Ave,0:13:02,classic_bike,member,13,10,Wednesday
+2080C199AB06CD7C,10/6/2021 18:38:00,10/6/2021 18:45:00,Sheffield Ave & Fullerton Ave,Clark St & Wrightwood Ave,0:07:15,electric_bike,member,7,10,Wednesday
+E072823277F67FBB,10/6/2021 18:38:00,10/6/2021 18:48:00,Seeley Ave & Roscoe St,Clark St & Newport St,0:09:46,classic_bike,member,10,10,Wednesday
+4D9A4EDAC03849EB,10/6/2021 18:38:00,10/6/2021 18:56:00,Leavitt St & Armitage Ave,Ashland Ave & Augusta Blvd,0:18:19,electric_bike,member,18,10,Wednesday
+E79B8DE4532320C7,10/6/2021 18:39:00,10/6/2021 18:48:00,Ravenswood Ave & Lawrence Ave,Sheridan Rd & Lawrence Ave,0:09:07,classic_bike,casual,9,10,Wednesday
+0B66331AEAE79374,10/6/2021 18:39:00,10/6/2021 19:09:00,Dusable Harbor,Lakeview Ave & Fullerton Pkwy,0:30:26,classic_bike,member,30,10,Wednesday
+A5C817650DDDB15A,10/6/2021 18:40:00,10/6/2021 18:45:00,Clark St & Winnemac Ave,Ravenswood Ave & Lawrence Ave,0:05:26,classic_bike,member,5,10,Wednesday
+B1343E23EED2BBE2,10/6/2021 18:40:00,10/6/2021 18:44:00,Carpenter St & Huron St,N Green St & W Lake St,0:04:16,electric_bike,member,4,10,Wednesday
+B7122DD5D412C085,10/6/2021 18:40:00,10/6/2021 18:43:00,Morgan St & Polk St,Halsted St & Polk St,0:03:05,classic_bike,member,3,10,Wednesday
+A5B81E563321FC79,10/6/2021 18:42:00,10/6/2021 18:45:00,Wells St & Polk St,Dearborn St & Van Buren St,0:03:08,classic_bike,casual,3,10,Wednesday
+E1F5C74D6E7D01E6,10/6/2021 18:42:00,10/6/2021 18:56:00,Sedgwick St & North Ave,Carpenter St & Huron St,0:14:44,classic_bike,member,14,10,Wednesday
+7E2F96D6F34C43DF,10/6/2021 18:42:00,10/6/2021 18:52:00,Columbus Dr & Randolph St,Federal St & Polk St,0:09:40,electric_bike,member,10,10,Wednesday
+92AF7AB718634B6C,10/6/2021 18:43:00,10/6/2021 18:56:00,Wells St & Elm St,Ashland Ave & Division St,0:12:58,classic_bike,casual,13,10,Wednesday
+0C8BE87C282DBD07,10/6/2021 18:43:00,10/6/2021 18:46:00,Ellis Ave & 60th St,Ellis Ave & 58th St,0:02:21,classic_bike,member,3,10,Wednesday
+26246664D715D8A5,10/6/2021 18:44:00,10/6/2021 18:56:00,Clark St & Drummond Pl,Clark St & Schiller St,0:12:29,classic_bike,member,12,10,Wednesday
+D9D39BBA7B655F13,10/6/2021 18:44:00,10/6/2021 19:01:00,State St & Pearson St,Damen Ave & Division St,0:17:23,classic_bike,member,17,10,Wednesday
+92F313EF2EBF0D40,10/6/2021 18:44:00,10/6/2021 19:03:00,DuSable Lake Shore Dr & Monroe St,Buckingham Fountain,0:18:25,classic_bike,member,19,10,Wednesday
+A5826B6EACC72F9E,10/6/2021 18:45:00,10/6/2021 18:53:00,Sheffield Ave & Wellington Ave,Lincoln Ave & Roscoe St,0:07:52,classic_bike,member,8,10,Wednesday
+F016F66A9B03CC68,10/6/2021 18:45:00,10/6/2021 18:47:00,Wells St & Elm St,Clark St & Schiller St,0:02:46,electric_bike,casual,2,10,Wednesday
+40FDC0EED4C3CB55,10/6/2021 18:45:00,10/6/2021 18:58:00,Sheffield Ave & Kingsbury St,Clinton St & Lake St,0:12:23,electric_bike,casual,13,10,Wednesday
+25C1A2184C12E337,10/6/2021 18:45:00,10/6/2021 18:45:00,Damen Ave & Thomas St (Augusta Blvd),Damen Ave & Thomas St (Augusta Blvd),0:00:05,electric_bike,member,0,10,Wednesday
+EADFAA97BAE8F0FF,10/6/2021 18:46:00,10/6/2021 18:51:00,Wells St & Elm St,Wells St & Concord Ln,0:05:21,classic_bike,member,5,10,Wednesday
+CBB91EECEF33B01F,10/6/2021 18:47:00,10/6/2021 18:49:00,Damen Ave & Chicago Ave,Leavitt St & Chicago Ave,0:02:17,classic_bike,member,2,10,Wednesday
+1341293DE069F340,10/6/2021 18:47:00,10/6/2021 19:03:00,Wells St & Hubbard St,Ashland Ave & Division St,0:16:10,classic_bike,member,16,10,Wednesday
+D380699746011645,10/6/2021 18:48:00,10/6/2021 19:45:00,Halsted St & Clybourn Ave,Dayton St & North Ave,0:57:25,electric_bike,casual,57,10,Wednesday
+67A9847DEFC21080,10/6/2021 18:48:00,10/6/2021 18:57:00,Desplaines St & Randolph St,New St & Illinois St,0:08:55,electric_bike,member,9,10,Wednesday
+918682A96321E0E1,10/6/2021 18:48:00,10/6/2021 19:04:00,Wabash Ave & Adams St,Wells St & Elm St,0:16:05,classic_bike,member,16,10,Wednesday
+C0C9CF00A904A19D,10/6/2021 18:48:00,10/6/2021 18:51:00,Wentworth Ave & 33rd St,State St & 33rd St,0:02:46,classic_bike,member,3,10,Wednesday
+EA8936604CC5FF45,10/6/2021 18:49:00,10/6/2021 18:56:00,LaSalle St & Illinois St,Wells St & Elm St,0:06:53,classic_bike,member,7,10,Wednesday
+B355A7D5578D6D1C,10/6/2021 18:49:00,10/6/2021 19:07:00,Wells St & Concord Ln,DuSable Lake Shore Dr & Monroe St,0:17:48,classic_bike,member,18,10,Wednesday
+5443A02A866728CF,10/6/2021 18:49:00,10/6/2021 19:32:00,Orleans St & Chestnut St (NEXT Apts),Ogden Ave & Chicago Ave,0:43:27,classic_bike,casual,43,10,Wednesday
+DF83A056AF398887,10/6/2021 18:50:00,10/6/2021 18:58:00,Daley Center Plaza,Sedgwick St & Huron St,0:07:35,classic_bike,member,8,10,Wednesday
+74F5A48C449AD599,10/6/2021 18:50:00,10/6/2021 19:15:00,University Ave & 57th St,Ellis Ave & 55th St,0:24:48,classic_bike,casual,25,10,Wednesday
+5634C869DA92D68D,10/6/2021 18:51:00,10/6/2021 19:54:00,Michigan Ave & Oak St,Michigan Ave & Oak St,1:02:48,classic_bike,casual,63,10,Wednesday
+CB9E2469D652BB01,10/6/2021 18:51:00,10/6/2021 19:33:00,LaSalle St & Illinois St,Lincoln Ave & Addison St,0:42:07,classic_bike,member,42,10,Wednesday
+255CEA121D3FD6E1,10/6/2021 18:51:00,10/6/2021 19:02:00,Aberdeen St & Jackson Blvd,Sangamon St & Washington Blvd,0:10:45,docked_bike,casual,11,10,Wednesday
+A490D4342D2D5F3F,10/6/2021 18:52:00,10/6/2021 19:01:00,Burling St & Diversey Pkwy,Larrabee St & Armitage Ave,0:09:32,classic_bike,casual,9,10,Wednesday
+C8DE7C1F79FCD2BE,10/6/2021 18:52:00,10/6/2021 19:15:00,Fairbanks Ct & Grand Ave,Green St & Madison St,0:22:58,classic_bike,casual,23,10,Wednesday
+EEAFA8449E6D618C,10/6/2021 18:52:00,10/6/2021 18:59:00,Halsted St & Willow St,Halsted St & Wrightwood Ave,0:07:44,classic_bike,casual,7,10,Wednesday
+79F230BA907D6C2C,10/6/2021 18:52:00,10/6/2021 18:59:00,Clark St & Lunt Ave,Ridge Blvd & Howard St,0:06:47,electric_bike,member,7,10,Wednesday
+C81A10509A76FFE7,10/6/2021 18:53:00,10/6/2021 19:04:00,Lincoln Ave & Diversey Pkwy,Clark St & Lincoln Ave,0:11:24,classic_bike,casual,11,10,Wednesday
+DF581C2CC6938375,10/6/2021 18:53:00,10/6/2021 19:02:00,Noble St & Milwaukee Ave,Green St & Madison St,0:09:17,electric_bike,casual,9,10,Wednesday
+488B8C467C9F21F3,10/6/2021 18:53:00,10/6/2021 19:01:00,Wells St & Concord Ln,Wells St & Huron St,0:07:54,electric_bike,member,8,10,Wednesday
+393DDACC991EDFA3,10/6/2021 18:54:00,10/6/2021 18:59:00,Dearborn St & Erie St,Kingsbury St & Kinzie St,0:04:48,electric_bike,member,5,10,Wednesday
+509DEB7616932BD8,10/6/2021 18:54:00,10/6/2021 19:07:00,Ravenswood Ave & Lawrence Ave,Sheridan Rd & Irving Park Rd,0:12:44,classic_bike,member,13,10,Wednesday
+E5D03E641ED9B25A,10/6/2021 18:54:00,10/6/2021 19:03:00,Sheridan Rd & Lawrence Ave,Pine Grove Ave & Irving Park Rd,0:09:15,classic_bike,member,9,10,Wednesday
+6871E26C48267073,10/6/2021 18:55:00,10/6/2021 19:00:00,Ravenswood Ave & Lawrence Ave,Clark St & Leland Ave,0:04:52,classic_bike,member,5,10,Wednesday
+58B83FAA543DF2EA,10/6/2021 18:55:00,10/6/2021 19:31:00,Wilton Ave & Diversey Pkwy,Streeter Dr & Grand Ave,0:36:44,docked_bike,casual,36,10,Wednesday
+EE09A800534C2D6F,10/6/2021 18:55:00,10/6/2021 19:04:00,Wells St & Hubbard St,Elizabeth (May) St & Fulton St,0:08:27,classic_bike,casual,9,10,Wednesday
+DE46CB7D54EE05D7,10/6/2021 18:55:00,10/6/2021 19:03:00,Michigan Ave & 14th St,Calumet Ave & 21st St,0:07:52,classic_bike,member,8,10,Wednesday
+6DEE34B2B49D55E1,10/6/2021 18:55:00,10/6/2021 19:03:00,DuSable Lake Shore Dr & North Blvd,Clark St & Elm St,0:07:40,classic_bike,member,8,10,Wednesday
+D6AC52330E84A318,10/6/2021 18:56:00,10/6/2021 18:58:00,Rush St & Hubbard St,Fairbanks Ct & Grand Ave,0:01:58,electric_bike,member,2,10,Wednesday
+2BCA7E449C88AC82,10/6/2021 18:56:00,10/6/2021 19:03:00,Kingsbury St & Kinzie St,Desplaines St & Randolph St,0:06:51,classic_bike,member,7,10,Wednesday
+A37CE957B44F11C6,10/6/2021 18:57:00,10/6/2021 19:05:00,Sheffield Ave & Wellington Ave,Southport Ave & Roscoe St,0:08:06,classic_bike,member,8,10,Wednesday
+AD2E74685F52B607,10/6/2021 18:57:00,10/6/2021 19:14:00,Claremont Ave & Hirsch St,Damen Ave & Wellington Ave,0:17:48,classic_bike,casual,17,10,Wednesday
+ACAA3D54B33982D0,10/6/2021 18:57:00,10/6/2021 19:06:00,Orleans St & Hubbard St,Rush St & Superior St,0:08:41,classic_bike,casual,9,10,Wednesday
+EE84A3E1141FFEC2,10/6/2021 18:58:00,10/6/2021 19:11:00,Sedgwick St & Huron St,Sedgwick St & Huron St,0:12:57,classic_bike,member,13,10,Wednesday
+88C4D3C8FC833630,10/6/2021 18:59:00,10/6/2021 19:22:00,Wells St & Evergreen Ave,Southport Ave & Belmont Ave,0:22:36,classic_bike,member,23,10,Wednesday
+8BA9C5A7698D79B9,10/6/2021 18:59:00,10/6/2021 19:04:00,Loomis St & Jackson Blvd,Loomis St & Lexington St,0:05:20,classic_bike,casual,5,10,Wednesday
+FE847D7CC4F1F6D3,10/6/2021 19:00:00,10/6/2021 19:05:00,Clark St & Armitage Ave,Halsted St & Dickens Ave,0:04:43,electric_bike,member,5,10,Wednesday
+610C5DD397A93B80,10/6/2021 19:00:00,10/6/2021 19:05:00,Clark St & Winnemac Ave,Winthrop Ave & Lawrence Ave,0:04:53,electric_bike,casual,5,10,Wednesday
+E170697182FEDCB3,10/6/2021 19:00:00,10/6/2021 19:06:00,Sheridan Rd & Montrose Ave,Halsted St & Roscoe St,0:06:14,electric_bike,member,6,10,Wednesday
+53407F9A0ECA0BB1,10/6/2021 19:01:00,10/6/2021 19:15:00,Broadway & Berwyn Ave,Broadway & Thorndale Ave,0:13:26,classic_bike,member,14,10,Wednesday
+B7250EEA0D671535,10/6/2021 19:01:00,10/6/2021 19:35:00,Clark St & Drummond Pl,Western Ave & Division St,0:34:34,classic_bike,casual,34,10,Wednesday
+EFF7570314CA2E9B,10/6/2021 19:02:00,10/6/2021 19:13:00,Logan Blvd & Elston Ave,Kedzie Ave & Milwaukee Ave,0:10:55,classic_bike,casual,11,10,Wednesday
+A0B5B6EB1721A4EE,10/6/2021 19:03:00,10/6/2021 19:19:00,Ellis Ave & 60th St,Lake Park Ave & 56th St,0:16:23,classic_bike,member,16,10,Wednesday
+2AA33B545B6B110E,10/6/2021 19:04:00,10/6/2021 19:06:00,Fairbanks Ct & Grand Ave,Rush St & Hubbard St,0:02:18,classic_bike,member,2,10,Wednesday
+94064CFAC1D3B2BC,10/6/2021 19:04:00,10/6/2021 19:41:00,South Shore Dr & 71st St,Cornell Ave & Hyde Park Blvd,0:37:06,classic_bike,casual,37,10,Wednesday
+4F173B0FD60D5746,10/6/2021 19:04:00,10/6/2021 19:17:00,Eckhart Park,Southport Ave & Wrightwood Ave,0:13:15,electric_bike,member,13,10,Wednesday
+17B81CDA07F6D972,10/6/2021 19:04:00,10/6/2021 19:11:00,Damen Ave & Pierce Ave,Wood St & Chicago Ave,0:07:19,classic_bike,member,7,10,Wednesday
+7BE220032C08676F,10/6/2021 19:04:00,10/6/2021 21:46:00,Museum of Science and Industry,Dorchester Ave & 63rd St,2:42:30,classic_bike,casual,162,10,Wednesday
+303686252F7A7252,10/6/2021 19:06:00,10/6/2021 19:32:00,DuSable Lake Shore Dr & Diversey Pkwy,Michigan Ave & Oak St,0:26:12,classic_bike,casual,26,10,Wednesday
+C41AF141E48C7F33,10/6/2021 19:07:00,10/6/2021 19:17:00,Milwaukee Ave & Wabansia Ave,California Ave & Milwaukee Ave,0:09:48,classic_bike,member,10,10,Wednesday
+A01A42616ABCEBD7,10/6/2021 19:07:00,10/6/2021 19:19:00,Fairbanks Ct & Grand Ave,Clark St & Schiller St,0:12:29,classic_bike,casual,12,10,Wednesday
+84A3A3E19747A7E7,10/6/2021 19:07:00,10/6/2021 19:12:00,Carpenter St & Huron St,Larrabee St & Kingsbury St,0:04:59,classic_bike,member,5,10,Wednesday
+F77069C6ED697233,10/6/2021 19:07:00,10/6/2021 19:11:00,Michigan Ave & Washington St,Columbus Dr & Randolph St,0:03:47,classic_bike,member,4,10,Wednesday
+B9839E9EF308F79F,10/6/2021 19:08:00,10/6/2021 19:34:00,Clark St & Drummond Pl,Streeter Dr & Grand Ave,0:25:52,classic_bike,member,26,10,Wednesday
+9849DEABE89A58FE,10/6/2021 19:09:00,10/6/2021 19:15:00,Franklin St & Chicago Ave,Wells St & Evergreen Ave,0:05:11,classic_bike,member,6,10,Wednesday
+DB9BD992957B8577,10/6/2021 19:09:00,10/6/2021 19:46:00,Milwaukee Ave & Wabansia Ave,Greenview Ave & Jarvis Ave,0:37:17,electric_bike,member,37,10,Wednesday
+3D8943120E9A5E9B,10/6/2021 19:10:00,10/6/2021 19:43:00,Prairie Ave & 43rd St,Prairie Ave & 43rd St,0:32:54,classic_bike,member,33,10,Wednesday
+27A28BB55603D575,10/6/2021 19:10:00,10/6/2021 19:17:00,Southport Ave & Roscoe St,Southport Ave & Wrightwood Ave,0:07:07,classic_bike,casual,7,10,Wednesday
+D23A3A14149FAA07,10/6/2021 19:10:00,10/6/2021 19:10:00,Stony Island Ave & 71st St,Stony Island Ave & 71st St,0:00:28,electric_bike,member,0,10,Wednesday
+5BAC474CFAEE646C,10/6/2021 19:10:00,10/6/2021 19:17:00,Sedgwick St & North Ave,Sheffield Ave & Willow St,0:06:25,classic_bike,casual,7,10,Wednesday
+0C96BC7CC873794B,10/6/2021 19:10:00,10/6/2021 19:15:00,Clark St & Wrightwood Ave,Clark St & Lincoln Ave,0:05:40,classic_bike,member,5,10,Wednesday
+6D4B8ECEED9B6AE4,10/6/2021 19:13:00,10/6/2021 19:24:00,Sheffield Ave & Fullerton Ave,Halsted St & Clybourn Ave,0:10:32,classic_bike,member,11,10,Wednesday
+AC6E03D3B4841276,10/6/2021 19:14:00,10/6/2021 19:24:00,Jefferson St & Monroe St,Halsted St & Maxwell St,0:09:45,classic_bike,member,10,10,Wednesday
+27B285DE24149A40,10/6/2021 19:14:00,10/6/2021 19:26:00,Sheridan Rd & Irving Park Rd,DuSable Lake Shore Dr & Wellington Ave,0:11:50,classic_bike,member,12,10,Wednesday
+12EDEC5343476B99,10/6/2021 19:14:00,10/6/2021 19:39:00,Ashland Ave & Division St,Ashland Ave & Wellington Ave,0:24:38,classic_bike,member,25,10,Wednesday
+263AC70919D16BCD,10/6/2021 19:14:00,10/6/2021 19:29:00,Fairbanks St & Superior St,Ogden Ave & Race Ave,0:14:13,classic_bike,member,15,10,Wednesday
+0082A44126E55532,10/6/2021 19:15:00,10/6/2021 19:49:00,Dearborn St & Van Buren St,State St & Kinzie St,0:34:48,electric_bike,casual,34,10,Wednesday
+B7018C2FCAF08876,10/6/2021 19:16:00,10/6/2021 19:21:00,Broadway & Belmont Ave,Pine Grove Ave & Waveland Ave,0:05:13,classic_bike,member,5,10,Wednesday
+5B84713E015B87C1,10/6/2021 19:16:00,10/6/2021 19:24:00,Racine Ave & Belmont Ave,Clark St & Wrightwood Ave,0:08:37,classic_bike,member,8,10,Wednesday
+35C0F0575834ABCB,10/6/2021 19:17:00,10/6/2021 19:26:00,Sedgwick St & Webster Ave,Wells St & Concord Ln,0:09:25,classic_bike,casual,9,10,Wednesday
+530CFA9DE6B10D06,10/6/2021 19:17:00,10/6/2021 19:26:00,Wells St & Hubbard St,St. Clair St & Erie St,0:09:34,classic_bike,member,9,10,Wednesday
+8BD511CDCD5347A5,10/6/2021 19:19:00,10/6/2021 19:24:00,Morgan St & Polk St,Loomis St & Lexington St,0:05:09,electric_bike,member,5,10,Wednesday
+D75B19F74E6D945F,10/6/2021 19:19:00,10/6/2021 19:25:00,Leavitt St & Lawrence Ave,Ravenswood Ave & Irving Park Rd,0:06:26,electric_bike,member,6,10,Wednesday
+88FFEDFE340837D2,10/6/2021 19:20:00,10/6/2021 19:46:00,Dearborn St & Van Buren St,Paulina Ave & North Ave,0:26:14,classic_bike,member,26,10,Wednesday
+DDAA08378BE0BA8A,10/6/2021 19:21:00,10/6/2021 21:08:00,Tripp Ave & 65th St,Tripp Ave & 65th St,1:46:56,electric_bike,casual,107,10,Wednesday
+CA714B1CFE418BF1,10/6/2021 19:21:00,10/6/2021 19:39:00,Desplaines St & Kinzie St,Kedzie Ave & Lake St,0:17:49,electric_bike,member,18,10,Wednesday
+E1CC076BADA0B81C,10/6/2021 19:21:00,10/6/2021 19:32:00,Larrabee St & North Ave,Racine Ave & Fullerton Ave,0:11:20,electric_bike,member,11,10,Wednesday
+33B15711E5809D33,10/6/2021 19:21:00,10/6/2021 20:09:00,Calumet Ave & 33rd St,Buckingham Fountain,0:48:37,classic_bike,casual,48,10,Wednesday
+475AF62C459A837A,10/6/2021 19:22:00,10/6/2021 19:57:00,Racine Ave & 18th St,Cityfront Plaza Dr & Pioneer Ct,0:35:10,electric_bike,member,35,10,Wednesday
+3BDF56CEC1007829,10/6/2021 19:22:00,10/6/2021 19:30:00,Sheffield Ave & Kingsbury St,Larrabee St & Webster Ave,0:07:40,classic_bike,member,8,10,Wednesday
+A855A830B504C5FD,10/6/2021 19:22:00,10/6/2021 19:28:00,Rush St & Hubbard St,Clark St & Lake St,0:05:20,classic_bike,member,6,10,Wednesday
+148B99F52C1E4728,10/6/2021 19:24:00,10/6/2021 19:39:00,DuSable Lake Shore Dr & North Blvd,DuSable Lake Shore Dr & Belmont Ave,0:14:59,classic_bike,casual,15,10,Wednesday
+AD8A5B4E0CAFE98A,10/6/2021 19:24:00,10/6/2021 19:41:00,California Ave & Montrose Ave,California Ave & Milwaukee Ave,0:16:50,electric_bike,casual,17,10,Wednesday
+9D82CC3756E0D332,10/6/2021 19:24:00,10/6/2021 19:27:00,Broadway & Waveland Ave,Clarendon Ave & Gordon Ter,0:03:17,electric_bike,member,3,10,Wednesday
+D3FF3BCB86D4E0DB,10/6/2021 19:25:00,10/6/2021 19:39:00,State St & Van Buren St,St. Clair St & Erie St,0:14:44,docked_bike,casual,14,10,Wednesday
+FD60A449E978E86A,10/6/2021 19:26:00,10/6/2021 19:43:00,Clark St & Newport St,Wells St & Concord Ln,0:17:40,classic_bike,member,17,10,Wednesday
+044C86927896FEDB,10/6/2021 19:26:00,10/6/2021 19:58:00,Canal St & Madison St,Federal St & Polk St,0:32:54,classic_bike,casual,32,10,Wednesday
+C5176CA04860FDBA,10/6/2021 19:27:00,10/6/2021 19:37:00,Franklin St & Illinois St,Green St & Madison St,0:10:00,classic_bike,member,10,10,Wednesday
+3FEBCE7C4FD2C06A,10/6/2021 19:27:00,10/6/2021 19:45:00,Bissell St & Armitage Ave,Southport Ave & Waveland Ave,0:17:41,classic_bike,casual,18,10,Wednesday
+C4EFCFD579577533,10/6/2021 19:27:00,10/6/2021 19:34:00,Clinton St & Washington Blvd,Clark St & Lake St,0:06:24,electric_bike,casual,7,10,Wednesday
+C3D80D1525CCF335,10/6/2021 19:29:00,10/6/2021 19:43:00,Ogden Ave & Race Ave,Milwaukee Ave & Grand Ave,0:13:51,classic_bike,casual,14,10,Wednesday
+B09394962AE4F228,10/6/2021 19:29:00,10/6/2021 19:39:00,California Ave & Milwaukee Ave,California Ave & Cortez St,0:10:08,classic_bike,casual,10,10,Wednesday
+839F80FB960732FA,10/6/2021 19:30:00,10/6/2021 19:37:00,Clark St & Winnemac Ave,Clark St & Bryn Mawr Ave,0:07:02,classic_bike,casual,7,10,Wednesday
+10E761C931F8B5B9,10/6/2021 19:30:00,10/6/2021 19:36:00,Hampden Ct & Diversey Ave,Wilton Ave & Belmont Ave,0:05:52,electric_bike,member,6,10,Wednesday
+C4028F05C254BECD,10/6/2021 19:30:00,10/6/2021 19:37:00,Wells St & Hubbard St,Dearborn St & Adams St,0:07:18,classic_bike,member,7,10,Wednesday
+0720092C91A55909,10/6/2021 19:31:00,10/6/2021 19:42:00,Wabash Ave & Roosevelt Rd,Franklin St & Jackson Blvd,0:11:22,electric_bike,member,11,10,Wednesday
+3D8E056C7F7A2F78,10/6/2021 19:32:00,10/6/2021 19:51:00,DuSable Lake Shore Dr & Belmont Ave,Clark St & Lincoln Ave,0:19:10,classic_bike,casual,19,10,Wednesday
+EEC5FAA33E32256E,10/6/2021 19:32:00,10/6/2021 19:54:00,Michigan Ave & Washington St,Rhodes Ave & 32nd St,0:21:58,electric_bike,casual,22,10,Wednesday
+6CD473BC6FE52AAF,10/6/2021 19:34:00,10/6/2021 19:48:00,Lincoln Ave & Roscoe St,Ravenswood Ave & Lawrence Ave,0:13:07,classic_bike,member,14,10,Wednesday
+299BFC784B73980F,10/6/2021 19:35:00,10/6/2021 19:48:00,Wells St & Hubbard St,Larrabee St & Menomonee St,0:13:25,classic_bike,member,13,10,Wednesday
+5DBDBA83A58BAFFE,10/6/2021 19:35:00,10/6/2021 19:51:00,Larrabee St & Menomonee St,Fairbanks Ct & Grand Ave,0:16:17,electric_bike,casual,16,10,Wednesday
+BE4D622E6A1408BC,10/6/2021 19:35:00,10/6/2021 19:43:00,Aberdeen St & Randolph St,Loomis St & Jackson Blvd,0:07:25,classic_bike,member,8,10,Wednesday
+4646AE01DB033D61,10/6/2021 19:35:00,10/6/2021 19:37:00,Wells St & Polk St,Federal St & Polk St,0:02:08,classic_bike,member,2,10,Wednesday
+5745DE1CB42AD70F,10/6/2021 19:36:00,10/6/2021 19:53:00,Wells St & Evergreen Ave,Greenview Ave & Fullerton Ave,0:17:07,classic_bike,member,17,10,Wednesday
+D905A275FFDECB23,10/6/2021 19:36:00,10/6/2021 20:55:00,Central Park Ave & 24th St,Central Park Ave & 24th St,1:19:04,electric_bike,casual,79,10,Wednesday
+F80F9CD1552E72BD,10/6/2021 19:36:00,10/6/2021 19:46:00,DuSable Lake Shore Dr & North Blvd,Larrabee St & Webster Ave,0:09:40,classic_bike,member,10,10,Wednesday
+E2855264B54503F8,10/6/2021 19:37:00,10/6/2021 19:44:00,Sedgwick St & North Ave,Lakeview Ave & Fullerton Pkwy,0:07:00,electric_bike,member,7,10,Wednesday
+6945B4741D506FE5,10/6/2021 19:37:00,10/6/2021 19:42:00,Southport Ave & Belmont Ave,Sheffield Ave & Wrightwood Ave,0:04:57,classic_bike,member,5,10,Wednesday
+DE008ED8A7267097,10/6/2021 19:39:00,10/6/2021 19:58:00,Sheffield Ave & Willow St,Clarendon Ave & Junior Ter,0:18:57,classic_bike,member,19,10,Wednesday
+74D0ADC985BD316C,10/6/2021 19:39:00,10/6/2021 19:49:00,Kimbark Ave & 53rd St,Ellis Ave & 60th St,0:10:38,classic_bike,member,10,10,Wednesday
+D0F23A7C5F426611,10/6/2021 19:40:00,10/6/2021 20:07:00,Eckhart Park,Calumet Ave & 21st St,0:26:41,classic_bike,member,27,10,Wednesday
+1DE44FDC7CC8F564,10/6/2021 19:42:00,10/6/2021 19:51:00,Clinton St & Jackson Blvd,Delano Ct & Roosevelt Rd,0:08:35,electric_bike,casual,9,10,Wednesday
+C15957B6E5D1459C,10/6/2021 19:42:00,10/6/2021 19:58:00,Bissell St & Armitage Ave,Michigan Ave & Oak St,0:15:48,classic_bike,casual,16,10,Wednesday
+49B8D3A12E47E2B9,10/6/2021 19:43:00,10/6/2021 19:46:00,Clark St & Bryn Mawr Ave,Clark St & Elmdale Ave,0:03:07,classic_bike,member,3,10,Wednesday
+B1D7E21948F2CC3E,10/6/2021 19:44:00,10/6/2021 19:53:00,Eckhart Park,Green St & Randolph St,0:09:30,electric_bike,member,9,10,Wednesday
+30A8BBCC4A235A2C,10/6/2021 19:44:00,10/6/2021 19:50:00,Halsted St & Polk St,Aberdeen St & Jackson Blvd,0:06:26,classic_bike,member,6,10,Wednesday
+0778A96E6786D75D,10/6/2021 19:46:00,10/6/2021 20:15:00,State St & 33rd St,Emerald Ave & 28th St,0:28:59,classic_bike,casual,29,10,Wednesday
+3FD14A1F47DCA3E8,10/6/2021 19:47:00,10/6/2021 20:13:00,Indiana Ave & 31st St,Millennium Park,0:26:07,classic_bike,member,26,10,Wednesday
+F36E086FDF655E19,10/6/2021 19:47:00,10/6/2021 19:48:00,Dayton St & North Ave,Dayton St & North Ave,0:00:14,electric_bike,member,1,10,Wednesday
+73693C5A066A24F9,10/6/2021 19:48:00,10/6/2021 20:00:00,LaSalle St & Illinois St,LaSalle Dr & Huron St,0:12:30,classic_bike,member,12,10,Wednesday
+6ACA1E41624779E9,10/6/2021 19:48:00,10/6/2021 19:52:00,Ellis Ave & 60th St,University Ave & 57th St,0:04:42,classic_bike,casual,4,10,Wednesday
+82AD8670049CDAA0,10/6/2021 19:49:00,10/6/2021 19:58:00,Ellis Ave & 55th St,Kimbark Ave & 53rd St,0:08:55,classic_bike,casual,9,10,Wednesday
+54A3B35C7841F819,10/6/2021 19:49:00,10/6/2021 19:59:00,Clark St & Grace St,Clark St & Drummond Pl,0:09:15,classic_bike,member,10,10,Wednesday
+D4D32E0D59022247,10/6/2021 19:49:00,10/6/2021 19:54:00,Ashland Ave & Division St,Damen Ave & Pierce Ave,0:04:52,electric_bike,casual,5,10,Wednesday
+7AA83901FD8101BB,10/6/2021 19:49:00,10/6/2021 19:55:00,Wilton Ave & Belmont Ave,Southport Ave & Irving Park Rd,0:06:14,electric_bike,casual,6,10,Wednesday
+604A8E5D96E4A5B4,10/6/2021 19:50:00,10/6/2021 20:01:00,Southport Ave & Clybourn Ave,Clark St & Newport St,0:11:42,electric_bike,casual,11,10,Wednesday
+D1ACCB4F309998D1,10/6/2021 19:52:00,10/6/2021 20:14:00,Clark St & Wellington Ave,Clark St & Lincoln Ave,0:22:16,classic_bike,casual,22,10,Wednesday
+57BAD867929DFB25,10/6/2021 19:52:00,10/6/2021 20:01:00,Wells St & Hubbard St,Clark St & Schiller St,0:09:01,classic_bike,member,9,10,Wednesday
+625B0BD92EC9C16B,10/6/2021 19:54:00,10/6/2021 20:03:00,Racine Ave & Belmont Ave,Broadway & Sheridan Rd,0:08:38,electric_bike,member,9,10,Wednesday
+F15B53B396456063,10/6/2021 19:56:00,10/6/2021 20:11:00,Eckhart Park,Clark St & Wrightwood Ave,0:15:38,electric_bike,casual,15,10,Wednesday
+2B4FFD75972883A6,10/6/2021 19:56:00,10/6/2021 20:00:00,Columbus Dr & Randolph St,State St & Randolph St,0:03:49,classic_bike,casual,4,10,Wednesday
+5EF3CA4D987A1AC9,10/6/2021 19:59:00,10/6/2021 20:10:00,Clark St & Wrightwood Ave,Southport Ave & Wellington Ave,0:10:43,classic_bike,casual,11,10,Wednesday
+9576E27C19AEAC61,10/6/2021 19:59:00,10/6/2021 20:08:00,Financial Pl & Ida B Wells Dr,Wabash Ave & Roosevelt Rd,0:08:26,classic_bike,member,9,10,Wednesday
+078C8A53D572337B,10/6/2021 19:59:00,10/6/2021 20:06:00,Larrabee St & Armitage Ave,Clark St & North Ave,0:07:01,classic_bike,member,7,10,Wednesday
+083FA93F315A01A5,10/6/2021 19:59:00,10/6/2021 20:25:00,Fairbanks St & Superior St,Smith Park,0:25:27,classic_bike,member,26,10,Wednesday
+74B38C3AE67BAC01,10/6/2021 20:01:00,10/6/2021 20:27:00,Paulina St & 18th St,Green St & Randolph St,0:25:59,electric_bike,casual,26,10,Wednesday
+2CE2D1659841DB48,10/6/2021 20:02:00,10/6/2021 20:25:00,St. Clair St & Erie St,Aberdeen St & Jackson Blvd,0:23:42,classic_bike,member,23,10,Wednesday
+0042353C83F27704,10/6/2021 20:03:00,10/6/2021 20:13:00,Clinton St & Polk St,Green St & Madison St,0:09:33,classic_bike,casual,10,10,Wednesday
+EB9781382B3D9B10,10/6/2021 20:04:00,10/6/2021 20:10:00,Ashland Ave & 13th St,Blue Island Ave & 18th St,0:05:25,classic_bike,member,6,10,Wednesday
+1F6A127EF61E7101,10/6/2021 20:04:00,10/6/2021 20:12:00,Ellis Ave & 55th St,Kimbark Ave & 53rd St,0:07:43,classic_bike,member,8,10,Wednesday
+E747F40079BAA301,10/6/2021 20:04:00,10/6/2021 20:11:00,Broadway & Argyle St,Clark St & Bryn Mawr Ave,0:07:17,classic_bike,casual,7,10,Wednesday
+8D0EA12062C71036,10/6/2021 20:04:00,10/6/2021 20:40:00,State St & 33rd St,Clark St & Schiller St,0:36:12,classic_bike,member,36,10,Wednesday
+9B3B88D10FE9609C,10/6/2021 20:04:00,10/6/2021 20:12:00,Ravenswood Ave & Lawrence Ave,Winchester (Ravenswood) Ave & Balmoral Ave,0:07:48,classic_bike,member,8,10,Wednesday
+8CF7AE838F87C17D,10/6/2021 20:07:00,10/6/2021 20:34:00,Campbell Ave & North Ave,Clark St & Lincoln Ave,0:27:01,classic_bike,member,27,10,Wednesday
+91E5CE36BE10EE36,10/6/2021 20:07:00,10/6/2021 20:30:00,Larrabee St & Division St,Lincoln Ave & Roscoe St,0:22:43,classic_bike,member,23,10,Wednesday
+A51BE8D1E54F30C5,10/6/2021 20:08:00,10/6/2021 20:17:00,State St & Randolph St,Dearborn St & Erie St,0:08:51,classic_bike,member,9,10,Wednesday
+7F55844A3BE2DE5D,10/6/2021 20:08:00,10/6/2021 20:25:00,Loomis St & Lexington St,Peoria St & Jackson Blvd,0:16:41,classic_bike,casual,17,10,Wednesday
+81478857D2163CAB,10/6/2021 20:09:00,10/6/2021 20:13:00,Rush St & Superior St,Rush St & Cedar St,0:04:14,electric_bike,member,4,10,Wednesday
+4128B4A2A9C05643,10/6/2021 20:09:00,10/6/2021 20:13:00,University Ave & 57th St,Woodlawn Ave & 55th St,0:03:32,classic_bike,member,4,10,Wednesday
+D92CDFC6A77443AA,10/6/2021 20:09:00,10/6/2021 20:16:00,Wells St & Concord Ln,Clark St & Elm St,0:07:19,electric_bike,casual,7,10,Wednesday
+96FB277C62D28F6A,10/6/2021 20:09:00,10/6/2021 20:22:00,DuSable Lake Shore Dr & North Blvd,Lincoln Ave & Fullerton Ave,0:12:14,classic_bike,casual,13,10,Wednesday
+E406FBF5CCEA3D6F,10/6/2021 20:11:00,10/6/2021 20:13:00,Honore St & Division St,Ashland Ave & Division St,0:02:26,classic_bike,member,2,10,Wednesday
+33DD7783DD90A41F,10/6/2021 20:11:00,10/6/2021 20:14:00,Columbus Dr & Randolph St,Michigan Ave & Madison St,0:02:46,electric_bike,member,3,10,Wednesday
+33F11296AEFEC53C,10/6/2021 20:12:00,10/6/2021 20:24:00,Wells St & Polk St,Clinton St & Jackson Blvd,0:11:42,electric_bike,member,12,10,Wednesday
+78837821BF8B4046,10/6/2021 20:12:00,10/6/2021 20:16:00,Ellis Ave & 60th St,University Ave & 57th St,0:03:58,classic_bike,member,4,10,Wednesday
+6F7322C701A32254,10/6/2021 20:14:00,10/6/2021 20:38:00,Clark St & Lincoln Ave,Wood St & Hubbard St,0:23:51,classic_bike,member,24,10,Wednesday
+6B1DBB4FD62C5143,10/6/2021 20:14:00,10/6/2021 20:39:00,Wood St & Milwaukee Ave,Ada St & Washington Blvd,0:25:27,docked_bike,casual,25,10,Wednesday
+B94800D13E390EA3,10/6/2021 20:15:00,10/6/2021 20:39:00,Keystone Ave & Montrose Ave,Kosciuszko Park,0:23:58,classic_bike,casual,24,10,Wednesday
+448E1F3F1E511D3C,10/6/2021 20:15:00,10/6/2021 20:23:00,Federal St & Polk St,Canal St & Jackson Blvd,0:07:35,classic_bike,member,8,10,Wednesday
+2214747C0259646B,10/6/2021 20:17:00,10/6/2021 20:21:00,Fairbanks Ct & Grand Ave,Streeter Dr & Grand Ave,0:04:01,classic_bike,member,4,10,Wednesday
+CB162AB9DBFB1B40,10/6/2021 20:18:00,10/6/2021 20:23:00,Clinton St & Madison St,Orleans St & Merchandise Mart Plaza,0:05:34,classic_bike,member,5,10,Wednesday
+C2DB595388C4C184,10/6/2021 20:18:00,10/6/2021 20:26:00,Damen Ave & Division St,Western Ave & Division St,0:08:03,classic_bike,member,8,10,Wednesday
+30287689039E34AA,10/6/2021 20:18:00,10/6/2021 20:22:00,Honore St & Division St,Damen Ave & Pierce Ave,0:04:01,electric_bike,casual,4,10,Wednesday
+8D998A0CEBE98DF6,10/6/2021 20:19:00,10/6/2021 20:31:00,Wabash Ave & Roosevelt Rd,Canal St & Taylor St,0:11:47,classic_bike,member,12,10,Wednesday
+280318FFA91B8A04,10/6/2021 20:20:00,10/6/2021 20:25:00,Dearborn St & Erie St,Clark St & Lake St,0:05:08,classic_bike,member,5,10,Wednesday
+B48E006C0826CB63,10/6/2021 20:20:00,10/6/2021 20:40:00,Clark St & Chicago Ave,Lincoln Ave & Fullerton Ave,0:20:06,classic_bike,casual,20,10,Wednesday
+F54369221DA61143,10/6/2021 20:20:00,10/6/2021 20:33:00,Clark St & Lincoln Ave,Wells St & Evergreen Ave,0:13:15,classic_bike,member,13,10,Wednesday
+7E18333105A45601,10/6/2021 20:21:00,10/6/2021 20:28:00,Broadway & Cornelia Ave,Clarendon Ave & Junior Ter,0:06:22,electric_bike,casual,7,10,Wednesday
+E8CC9C5BC4CF50A0,10/6/2021 20:21:00,10/6/2021 20:36:00,Broadway & Waveland Ave,Clark St & Bryn Mawr Ave,0:15:05,electric_bike,casual,15,10,Wednesday
+3ECAE910C1A44E2D,10/6/2021 20:22:00,10/6/2021 20:38:00,Ashland Ave & Grand Ave,Lincoln Ave & Belmont Ave,0:16:17,electric_bike,casual,16,10,Wednesday
+B57C5C8A34E1CFE1,10/6/2021 20:23:00,10/6/2021 20:38:00,California Ave & Milwaukee Ave,Western Ave & Walton St,0:15:23,classic_bike,casual,15,10,Wednesday
+B631D9D551CA5332,10/6/2021 20:24:00,10/6/2021 20:32:00,Aberdeen St & Jackson Blvd,Morgan St & Polk St,0:07:52,classic_bike,member,8,10,Wednesday
+E81C804C1B250DEA,10/6/2021 20:26:00,10/6/2021 20:39:00,Southport Ave & Roscoe St,Sheffield Ave & Willow St,0:12:44,electric_bike,casual,13,10,Wednesday
+00D9AAF1AD4B1345,10/6/2021 20:26:00,10/6/2021 20:37:00,Sheffield Ave & Waveland Ave,Wilton Ave & Belmont Ave,0:11:22,classic_bike,casual,11,10,Wednesday
+82A47F815AD618F8,10/6/2021 20:26:00,10/6/2021 20:39:00,DuSable Lake Shore Dr & North Blvd,Field Blvd & South Water St,0:12:17,classic_bike,casual,13,10,Wednesday
+6921D3A87BFB9BFA,10/6/2021 20:27:00,10/6/2021 20:37:00,Dayton St & North Ave,Desplaines St & Randolph St,0:09:27,electric_bike,casual,10,10,Wednesday
+94F43BB9D7532D0B,10/6/2021 20:27:00,10/6/2021 20:31:00,May St & Taylor St,Halsted St & Maxwell St,0:03:32,electric_bike,member,4,10,Wednesday
+D7D3D84719AE584D,10/6/2021 20:27:00,10/6/2021 20:39:00,Stockton Dr & Wrightwood Ave,Stockton Dr & Wrightwood Ave,0:11:58,classic_bike,member,12,10,Wednesday
+FE5CDC8A8B3D1277,10/6/2021 20:28:00,10/6/2021 20:34:00,Halsted St & Polk St,Loomis St & Lexington St,0:05:59,classic_bike,member,6,10,Wednesday
+85C7C1A113A5423F,10/6/2021 20:28:00,10/6/2021 20:32:00,Indiana Ave & 31st St,Calumet Ave & 33rd St,0:03:58,classic_bike,member,4,10,Wednesday
+B9CD5D24CAF29582,10/6/2021 20:28:00,10/6/2021 20:41:00,DuSable Lake Shore Dr & North Blvd,DuSable Lake Shore Dr & Ohio St,0:12:48,classic_bike,casual,13,10,Wednesday
+7F64586A86C6BBF8,10/6/2021 20:29:00,10/6/2021 20:35:00,Claremont Ave & Hirsch St,California Ave & Division St,0:05:45,classic_bike,member,6,10,Wednesday
+97D4B441C738FC6C,10/6/2021 20:30:00,10/6/2021 20:45:00,Green St & Madison St,Loomis St & Lexington St,0:15:22,electric_bike,member,15,10,Wednesday
+B353381D089D84A4,10/6/2021 20:31:00,10/6/2021 20:45:00,Ritchie Ct & Banks St,Clark St & Wellington Ave,0:14:26,classic_bike,member,14,10,Wednesday
+37F1F1E9F6DC6E3E,10/6/2021 20:34:00,10/6/2021 20:57:00,Loomis St & Lexington St,Loomis St & Lexington St,0:22:19,classic_bike,member,23,10,Wednesday
+4AF1451BA8974ED6,10/6/2021 20:36:00,10/6/2021 20:39:00,Damen Ave & Grand Ave,Ashland Ave & Grand Ave,0:02:44,classic_bike,casual,3,10,Wednesday
+DC4D84C3E83AF490,10/6/2021 20:37:00,10/6/2021 20:45:00,Clinton St & Roosevelt Rd,Racine Ave & 15th St,0:07:25,electric_bike,casual,8,10,Wednesday
+AE100CBF24E42630,10/6/2021 20:41:00,10/6/2021 20:45:00,Wabash Ave & 16th St,Indiana Ave & Roosevelt Rd,0:03:55,electric_bike,casual,4,10,Wednesday
+CBF2646E242C40FB,10/6/2021 20:41:00,10/6/2021 20:52:00,California Ave & North Ave,Ashland Ave & Augusta Blvd,0:10:10,electric_bike,member,11,10,Wednesday
+8E0C2DCCA5E1192C,10/6/2021 20:41:00,10/6/2021 20:47:00,Franklin St & Illinois St,New St & Illinois St,0:05:51,electric_bike,casual,6,10,Wednesday
+81A271C31714BB53,10/6/2021 20:42:00,10/6/2021 20:51:00,LaSalle St & Illinois St,Larrabee St & Kingsbury St,0:08:40,classic_bike,member,9,10,Wednesday
+73D58137D5404AC3,10/6/2021 20:42:00,10/6/2021 20:56:00,Wabash Ave & Adams St,Desplaines St & Kinzie St,0:13:49,classic_bike,member,14,10,Wednesday
+617A7859C507AB0D,10/6/2021 20:43:00,10/6/2021 21:06:00,Sheffield Ave & Waveland Ave,Kedzie Ave & Milwaukee Ave,0:23:04,electric_bike,member,23,10,Wednesday
