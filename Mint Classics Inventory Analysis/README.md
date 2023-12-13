@@ -1,21 +1,6 @@
 # Mint Classics Inventory Analysis
 
-Analyze Data in a Model Car Database with MySQL Workbench - A collection of SQL queries to validate suggestions for inventory reduction. 
-
-Mint Classics Company is hoping to close one of their storage facilities. They want suggestions and recommendations for reorganizing or reducing inventory, while still maintaining timely service to their customers. 
-My task is to conduct exploratory analysis to investigate if there are any patterns or themes that may influence the reduction or reorganization of inventory in the Mint Classics storage facilities. 
-
-Tools Used:
-* MySQL Workbench
-
-Quick Links:
-* [Mint Classics Dataset](https://d3c33hcgiwev3.cloudfront.net/2oM-7bPhQAK0DX4vqIQ_JQ_596ae3ede6934608af481acc56cb18f1_mintclassicsDB.sql?Expires=1701993600&Signature=dShvrtGJLsQD2jDNaa~4YrY9RMnItBt9vtQaxiN6PeFpDNgNMmnV3eu8q6RRgu66Mo9YmvipbRfHsgXCuLKOvraKCq7vbGuQN664xB5X8ot0~N-txScgkRcM5d2OYhUdoKy1jy6RCkTKQNX1afuYxThRPKe-klWcSlNfuyCuuf0_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
-* [SQL Queries](https://github.com/phelpsbp/Project-Files/blob/main/SQL/MintClassicsInventoryAnalysis/Mints%20Classics%20SQL%20Queries.sql)
-* [SQL Queries: What-If Analysis](https://github.com/phelpsbp/Project-Files/blob/main/SQL/MintClassicsInventoryAnalysis/Mints%20Classics%20What-if%20Analysis%20SQL%20Script.sql)
-* [Full Published Analysis]()
-
-
-# Mint Classics Inventory Analysis
+Mint Classics Company, a retailer of classic model cars and other vehicles, is looking to close one of its storage facilities. To make a data-based business decision, the company wants suggestions and recommendations for reorganizing or reducing inventory while maintaining timely customer service. As a data analyst, you will use MySQL Workbench to familiarize yourself with the general business by examining the current data and isolating and identifying those parts of the data that could be useful in deciding how to reduce inventory.
 
 ## Table of Contents
 
@@ -32,12 +17,12 @@ Quick Links:
 ### Project Overview
 ---
 
-Mint Classics Company, a retailer of classic model cars and other vehicles, is looking to close one of its storage facilities. To make a data-based business decision, the company wants suggestions and recommendations for reorganizing or reducing inventory while maintaining timely customer service. I will use MySQL Workbench to familiarize myself with the general business by examining the current data and isolating and identifying those parts of the data that could be useful in deciding how to reduce inventory.
+Conducted exploratory analysis to investigate if there are any patterns or themes that may influence the reduction or reorganization of inventory in the Mint Classics storage facilities. Conducted a what-if analysis validating the effectiveness of a 5% inventory reduction. and provided analytic insights and data-driven recommendations. 
 
 ### Data Sources
 
 * [Mint Classics Dataset](https://d3c33hcgiwev3.cloudfront.net/2oM-7bPhQAK0DX4vqIQ_JQ_596ae3ede6934608af481acc56cb18f1_mintclassicsDB.sql?Expires=1701993600&Signature=dShvrtGJLsQD2jDNaa~4YrY9RMnItBt9vtQaxiN6PeFpDNgNMmnV3eu8q6RRgu66Mo9YmvipbRfHsgXCuLKOvraKCq7vbGuQN664xB5X8ot0~N-txScgkRcM5d2OYhUdoKy1jy6RCkTKQNX1afuYxThRPKe-klWcSlNfuyCuuf0_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
-* [EER]()
+* [EER](https://github.com/phelpsbp/Projects/blob/main/Mint%20Classics%20Inventory%20Analysis/EER.jpg)
 
 ### Tools
 
@@ -47,35 +32,53 @@ Tools Used:
 ## Data Cleaning and Preparation
 
 In the initial data preparation phase, we performed the following tasks:
-
-1. Filtered for nulls, mispelled wording, and innapropriate spacing.
-2. Removed unnecessary columns using `SELECT`, `CTRL`+`ALT`+`RIGHT CLICK`, `DELETE`.
-3. Moved `population` next to `date` and `location` using `CUT` and `INSERT`
+1. Import the Classic Model Car Relational Database.
+2. Examine the database structure via the EER to build familiarity with the business process.
 
 ## Exploratory Data Analysis
 
-EDA involved exploring the locational data to answer key questions, such as:
+EDA involved exploring the products currently in inventory to answer key questions, such as:
 
-- What was the likelihood of dying if you contracted Covid in your country?
-- How much of the population contracted Covid?
-- Which countries had the highest infection rates?
-- Which countries had the highest death counts?
+- Which individual products are the least ordered?
+- Which individual products might be overstocked?
+- Which product lines contribute to overstocking?
+- Which warehouses have the highest and lowest inventory stocks?
+- What the most expensive items in stock and does expense play a role in order frequency?
+- Who are the top customers? Do their debt/credit ratios play a role?
 
 ## Data Analysis
 
 
-### COVID Data by Country
+### Order Frequencies
 
-First, I am going to look at total deaths, total cases, highest infection rates, and highest death counts by country. 
-#### Total Cases vs. Total Deaths
+To start, let's look at the overall stock counts. Using the `mintclassics.products` and `mintclassics.orderdetails` tables, I'll take a look at which individual products have the highest inventory-to-order ratios.
 
 ```sql
-select location, date, total_cases, total_deaths, 
-(total_deaths/total_cases)*100 as DeathPercentage
-from PortfolioProject..CovidDeaths$
-where location like '%states%'
-and continent is not null
-order by 1,2
+SELECT
+	productCode,
+	productName,
+	quantityInStock,
+	totalOrdered,
+	(quantityInStock - totalOrdered) As inventoryDifference
+FROM
+	( SELECT
+		prd.productCode,
+        prd.productName,
+        prd.quantityInStock,
+        SUM(ord.quantityOrdered) as totalOrdered
+	FROM 
+		mintclassics.products as prd
+    LEFT JOIN 
+		mintclassics.orderdetails as ord on prd.productCode = ord.productCode
+	GROUP BY
+		prd.productCode,
+        prd.productName,
+        prd.quantityInStock
+	) as inventory_summary
+WHERE 
+	(quantityInStock - totalOrdered) > 0 
+ORDER BY
+	inventoryDifference DESC;
 ```
 
 #### Total Cases vs. Population
