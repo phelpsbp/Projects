@@ -16,7 +16,7 @@
 ### Project Overview
 ---
 
-This data analysis project aims to produce insights into customer trends for a bike-share compnay, Cyclistic. By analyzing historical bike trip data, we seek to produce professional data visualizations, along with recommendations for marketing strategies, aimed at converting casual riders to annual members for future revenue and growth.
+This data analysis project aims to produce insights into customer trends for a bike-share company, Cyclistic. By analyzing historical bike trip data, we seek to produce professional data visualizations, along with recommendations for marketing strategies, aimed at converting casual riders to annual members for future revenue and growth.
 
 ### Data Sources
 
