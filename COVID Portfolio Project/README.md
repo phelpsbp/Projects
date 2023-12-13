@@ -9,8 +9,6 @@
 - [Data Analysis](#data-analysis)
 - [Table Merging](#table-merging)
 - [Results and Findings](#results-and-findings)
-- [Recommendations](#recommendations)
-- [Limitations](#limitations)
 - [Deliverables](#deliverables)
 
   
@@ -173,42 +171,48 @@ where continent is not null
 --group by date
 order by 1,2
 ```
+![Screenshot 2023-11-28 170811](https://github.com/phelpsbp/Projects/assets/150976820/d57ef499-6bb8-49de-9c4a-8f193b1323cb)
 
-## Results and Findings
+### Continents with the Highest Death Counts
+```sql
+Select location, sum(cast(new_deaths as int)) as TotalDeathCount
+from PortfolioProject..CovidDeaths$
+--where location like '%states%'
+where continent is null
+and location not in ('World', 'European Union', 'International')
+group by location
+order by TotalDeathCount desc
+```
+![Screenshot 2023-11-28 170830](https://github.com/phelpsbp/Projects/assets/150976820/a2899fce-8fc5-4674-9626-6c5d3932b3b3)
 
-The analysis results are summarized as follows:
-|Casual Riders|Annual Members|
-|--------|--------|
-|Preferred classic bikes. Had a greater preference for docked bikes|Preferred classic bikes. Showed a higher inclination for electric bikes|
-|Favored the Summer: June-August were the busiest months|Rode most mid-Summer to early fall: July-September|
-|Rode most frequently on weekends, specifically Saturdays|Rode consistently throughout the week, peaking on Wednesdays, indicating that members most likely use this service for purposes outside of leisure - like commuting or everyday errands|
-|Usage increased steadily throughout the day, peaking at 5PM|Busiest hours coincided with school and working hours - 8AM, 12PM, and 5PM|
-|Rode for longer ride durations, especially on weekends in warmer months|Had shorter ride lengths but rode at more consistent durations, suggesting that usage is linked to daily routines and commute|
-|Visited bike stations primarily by large attractions and entertainment such as parks, theaters, and aquariums|Frequented stations that were located downtown - colleges, office buildings, and residential areas|
+### Highest Infection Rates
+```sql
+select location, population, max(total_cases) as HighestInfectionCount, 
+Max((total_cases/population))*100 as PercentPopulationInfected
+from PortfolioProject..CovidDeaths$
+-- Where location like '%states%'
+group by location, population
+order by PercentPopulationInfected desc
+```
+![Screenshot 2023-11-28 170902](https://github.com/phelpsbp/Projects/assets/150976820/72dde584-b52c-42e8-a3cc-f7ebaa2f210f)
 
-## Recommendations
-
-Based on the analysis, my recommendations of a marketing strategy aimed at converting casual riders into annual subscription members are as follows:
-
-1. ***Exclusive Discounts***
-   - Casual riders used Cyclistic Bike-Share at large and in longer durations on weekends. Providing exclusive member-only discounts for weekends and longer rides can encourage casual riders to pay for annual memberships.
-2. ***Area-Specific Promotions***
-   - Advertise at bike stations most frequented by casual riders, especially at stations near large tourist attractions and entertainment.
-3. ***Seasonal Marketing Campaign***
-   - Use targeted marketing during peak activity hours, specifically on weekends and during Summer, to highlight the cost-savings advantages of annual membership.
-
-## Limitations
-
-Even after removing test rides (rides greater than 24 hours in duration), there were some outliers in casual riders. This could be a factor in casual riders having significantly longer average ride lengths.
-There was no data on gender or age, both of which can play a huge role in biking trends, limiting possible marketing opportunities to specific groups. 
-
+### Highest Infection Rates by Country, Represented Over Time. 
+```sql
+select location, population, date, max(total_cases) as HighestInfectionCount, 
+Max((total_cases/population))*100 as PercentPopulationInfected
+from PortfolioProject..CovidDeaths$
+-- Where location like '%states%'
+group by location, population, date
+order by PercentPopulationInfected desc
+```
+![Screenshot 2023-11-28 171015](https://github.com/phelpsbp/Projects/assets/150976820/2fd630a5-8ba3-499f-9f1f-1966ed649849)
   
 ## Deliverables
 
-The Full, interactive Power BI Dashboard can be viewed [here](https://app.powerbi.com/view?r=eyJrIjoiNDY5Y2NkYWYtY2M0Zi00YTJkLWE5MjQtMTBhMmU5ZjA0NGNiIiwidCI6IjM1NWI3MWIwLWEyMDQtNGMyMC05NzQ3LTVlYTU3OTQyNzkxZCIsImMiOjJ9)
 
-<img src="https://github.com/phelpsbp/Project-Files/assets/150976820/20575a78-5426-410d-93b3-359e5d04fd9c" height="450"/>
-   
+The Full, interactive Tableau Dashboard can be viewed [here](https://public.tableau.com/app/profile/brittany.everette/viz/CovidDashboard_17001768757930/Dashboard1)
+![Screenshot 2023-11-20 193802](https://github.com/phelpsbp/Projects/assets/150976820/f565cc5f-969d-422a-ae64-6387f5957573)
+
 
 
 
