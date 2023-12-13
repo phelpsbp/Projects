@@ -7,6 +7,7 @@
 - [Data Cleaning and Preparation](#data-cleaning-and-preparation)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Data Analysis](#data-analysis)
+- [Table Merging](#table-merging)
 - [Results and Findings](#results-and-findings)
 - [Recommendations](#recommendations)
 - [Limitations](#limitations)
@@ -52,8 +53,10 @@ EDA involved exploring the locational data to answer key questions, such as:
 ## Data Analysis
 
 
-### Total Cases vs. Total Deaths
-#### Likelihood of dying 
+### COVID Data by Country
+
+First, I am going to look at total deaths, total cases, highest infection rates, and highest death counts by country. 
+#### Total Cases vs. Total Deaths
 
 ```sql
 select location, date, total_cases, total_deaths, 
@@ -63,125 +66,113 @@ where location like '%states%'
 and continent is not null
 order by 1,2
 ```
-<img src="https://github.com/phelpsbp/Project-Files/assets/150976820/a56e2410-f2c9-4a80-8787-ec635a4d235c" width="425"/>
 
-#### Total Trips per Bike Type
+#### Total Cases vs. Population
 ```sql
-select costumer_type, bike_type,
-count(*) as total_trips
-from `capstone-403818.VisualizationTables.summary_table`
-group by costumer_type, bike_type
-order by costumer_type, total_trips;
+select location, date, total_cases, population, 
+(total_cases/population)*100 as PercentPopulationInfected
+from PortfolioProject..CovidDeaths$
+where location like '%states%'
+order by 1,2 
 ```
-<img src="https://github.com/phelpsbp/Project-Files/assets/150976820/aa876465-b427-41f4-bb77-553ca7283876" width="425"/>
 
-#### Monthly Trips 
+#### Infection Rates vs. Population
 
 ```sql
-select costumer_type, ride_month,
-count(ride_id) as total_trips
-from `capstone-403818.VisualizationTables.summary_table`
-group by costumer_type, ride_month
-order by ride_month;
+select location, population, max(total_cases) as HighestInfectionCount, 
+Max((total_cases/population))*100 as PercentPopulationInfected
+from PortfolioProject..CovidDeaths$
+-- Where location like '%states%'
+group by location, population
+order by PercentPopulationInfected desc
 ```
-<img src="https://github.com/phelpsbp/Project-Files/assets/150976820/461fb515-47c3-4bc0-b443-15867794df47" width="425"/>
-
-#### Trips per Day
-
+#### Highest Death Counts
+To calculate for maximum deaths, I converted `total_deaths` from nvarchar(255) to an interger using the `CAST` function.
 ```sql
-select costumer_type, day_of_week,
-count(ride_id) as total_trips
-from `capstone-403818.VisualizationTables.summary_table`
-group by costumer_type, day_of_week
-order by day_of_week;
+select location, max(cast(total_deaths as int)) as TotalDeathCount
+from PortfolioProject..CovidDeaths$
+-- Where location like '%states%'
+where continent is not null
+group by location
+order by TotalDeathCount desc
 ```
-<img src="https://github.com/phelpsbp/Project-Files/assets/150976820/2c10dab5-efcd-488a-a56c-504c698a645d" width="425"/>
 
-#### Trips per Hour
+### COVID Data by Continent
+I ran the same queries from examining the country data, but set the `SELECT` function to `continent` instead of `location`, and used `GROUP BY` to sort the data by continent instead of location (country).
+
+## Table Merging
+With the data obtained from the analysis, I'll be joining both datasets on `continent`, `location`, `date`, and `population`, as well as adding `new_vaccinations` to our new master dataset. 
 ```sql
-select 
-extract (HOUR from started_at) as hour,
-count(started_at) as total_rides, costumer_type
-from `capstone-403818.VisualizationTables.summary_table`
-group by hour, costumer_type
-order by hour;
+select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations,
+sum(convert(int, vac.new_vaccinations)) OVER (Partition by dea.location 
+order by dea.location,dea.date) as RollingPeopleVaccinated
+from PortfolioProject..CovidDeaths$ dea
+join PortfolioProject..CovidVaccinations$ vac 
+on dea.location = vac.location
+and dea.date = vac.date
+where dea.continent is not null
+order by 2,3;
 ```
-| <img src="https://github.com/phelpsbp/Project-Files/assets/150976820/29498401-5563-440b-853c-f8b752cb5120" width="425"/> <img src="https://github.com/phelpsbp/Project-Files/assets/150976820/0f80da7e-8c0d-4613-9d3b-28e4d2ff95bf" width="425"/> | 
-|:--:| 
-| *Hours are in a 24-hour clock format with 0 = midnight (12AM)* |
 
-
-### Differences in Frequencies
-#### Average Ride Lengths
+### CTE Table
+To avoid getting the total sum of vaccinations and calculate a rolling count to represent vaccinations continuing over time, I partitioned by location **and** date. 
 ```sql
-select costumer_type,
-avg(ride_duration) as avg_ride_length
-from `capstone-403818.VisualizationTables.summary_table`
-group by costumer_type;
+With PopvsVac (Continent, Location, Date, Population, New_Vaccinations, 
+RollingPeopleVaccinated) as
+(
+select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations, 
+sum(convert(int, vac.new_vaccinations)) OVER (Partition by dea.location 
+order by dea.location, dea.date) as RollingPeopleVaccinated
+--, (RollingPeopleVaccinated/population)*100
+from PortfolioProject..CovidDeaths$ dea
+join PortfolioProject..CovidVaccinations$ vac
+on dea.location = vac.location
+and dea.date = vac.date
+where dea.continent is not null
+)
+select *, (RollingPeopleVaccinated/Population)*100
+from PopvsVac
 ```
-<img src="https://github.com/phelpsbp/Project-Files/assets/150976820/d71205b6-3590-4d52-a245-7687d110036d" width="425"/>
-
-#### Average Ride Lengths per Month
+### Temp Table
+The information resulted in an unorganized mess. To resolve this I tried commenting out "where `dea.continent` is not null" which resulted in an error due to the table already existing, whoops! Let's go ahead and use the `DROP TABLE` function to fix this. 
 ```sql
-select costumer_type, ride_month,
-avg(ride_duration) as avg_ride_length
-from `capstone-403818.VisualizationTables.summary_table`
-group by costumer_type, ride_month
-order by ride_month;
-```
-<img src="https://github.com/phelpsbp/Project-Files/assets/150976820/2eefa1e7-6d2e-4965-b22f-7554bec2e007" width="425"/>
+Drop Table if exists #PercentPopulationVaccinated
+Create Table #PercentPopulationVaccinated
+(
+Continent nvarchar(255),
+Location nvarchar(255),
+Date datetime, 
+Population numeric,
+New_Vaccinations numeric,
+RollingPeopleVaccinated numeric
+)
 
-#### Average Ride Lengths per Day
+insert into #PercentPopulationVaccinated
+select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations,
+sum(convert(int, vac.new_vaccinations)) OVER (Partition by dea.location 
+order by dea.location, dea.date) as RollingPeopleVaccinated
+--, (RollingPeopleVaccinated/population)*100
+from PortfolioProject..CovidDeaths$ dea
+join PortfolioProject..CovidVaccinations$ vac
+on dea.location = vac.location
+and dea.date = vac.date
+--where dea.continent is not null
+--order by 2,3
+select *, (RollingPeopleVaccinated/Population)*100
+from #PercentPopulationVaccinated
+```
+
+## Results and Findings
+### Global Numbers - Total Cases vs. Total Deaths
 ```sql
-select costumer_type, day_of_week,
-avg(ride_duration) as avg_ride_length
-from `capstone-403818.VisualizationTables.summary_table`
-group by costumer_type, day_of_week
-order by day_of_week;
+select sum(new_cases) as total_cases, sum(cast(new_deaths as int)) as total_deaths, 
+sum(cast(new_deaths as int))/sum(new_cases)*100 as DeathPercentage
+from PortfolioProject..CovidDeaths$
+--where location like '%states%'
+where continent is not null
+--group by date
+order by 1,2
 ```
-<img src="https://github.com/phelpsbp/Project-Files/assets/150976820/49893932-ffe2-4ac6-9108-a99e914878d2" width="425"/>
-
-### Most Popular Bike Stations
-#### Top 10 Start and End Stations - Casual Riders
-```sql
-select costumer_type, start_station_name,
-count(*) as visits_casual
-from `capstone-403818.VisualizationTables.summary_table`
-where costumer_type = 'casual'
-group by costumer_type, start_station_name
-order by count(*) desc
-limit 10;
-
-select costumer_type, end_station_name,
-count(*) as visits_casual
-from `capstone-403818.VisualizationTables.summary_table`
-where costumer_type = 'casual'
-group by costumer_type, end_station_name
-order by count(*) desc
-limit 10;
-```
-<img src="https://github.com/phelpsbp/Project-Files/assets/150976820/4f1fa79f-6819-4b6d-a1d8-af4fa3a4dbd8" width="425"/><img src="https://github.com/phelpsbp/Project-Files/assets/150976820/2cc2dc23-1e1e-410a-9109-27213cf07629" width="425"/>
-
-#### Top 10 Start and End Stations - Members
-```sql
-select costumer_type, start_station_name,
-count(*) as visits_member
-from `capstone-403818.VisualizationTables.summary_table`
-where costumer_type = 'member'
-group by costumer_type, start_station_name
-order by count(*) desc
-limit 10;
-
-select costumer_type, end_station_name,
-count(*) as visits_member
-from `capstone-403818.VisualizationTables.summary_table`
-where costumer_type = 'member'
-group by costumer_type, end_station_name
-order by count(*) desc
-limit 10;
-```
-<img src="https://github.com/phelpsbp/Project-Files/assets/150976820/fa90ce8a-c1b6-4f94-b1c1-bf758076af79" width="425"/><img src="https://github.com/phelpsbp/Project-Files/assets/150976820/2303cb1b-14f5-4c95-93a8-489baf3898f6" width="425"/>
-
 
 ## Results and Findings
 
