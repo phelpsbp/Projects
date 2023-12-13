@@ -1,4 +1,4 @@
-# Project Files
+# Projects
 **Welcome!**
 
 Here you'll find all of my Data Analytics Projects. 
