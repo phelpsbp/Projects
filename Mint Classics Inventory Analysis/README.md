@@ -17,7 +17,7 @@ Mint Classics Company, a retailer of classic model cars and other vehicles, is l
 ### Project Overview
 ---
 
-Conducted exploratory analysis to investigate if there are any patterns or themes that may influence the reduction or reorganization of inventory in the Mint Classics storage facilities. Conducted a what-if analysis validating the effectiveness of a 5% inventory reduction. and provided analytic insights and data-driven recommendations. 
+Conducted exploratory analysis to investigate if there were any patterns or themes that may influence the reduction or reorganization of inventory in the Mint Classics storage facilities. Conducted a what-if analysis showing the impact a 5% inventory reduction, and provided analytic insights and data-driven recommendations. 
 
 ### Data Sources
 
@@ -51,7 +51,7 @@ EDA involved exploring the products currently in inventory to answer key questio
 
 ### Order Frequencies
 
-To start, let's look at the overall stock counts. Using the `mintclassics.products` and `mintclassics.orderdetails` tables, I'll take a look at which individual products have the highest inventory-to-order ratios.
+To start, let's look at the overall stock counts. Using the `mintclassics.products` and `mintclassics.orderdetails` tables, I'll take a look at the differences in inventory-to-order counts.
 
 ```sql
 SELECT
@@ -80,6 +80,7 @@ WHERE
 ORDER BY
 	inventoryDifference DESC;
 ```
+The query filters the results to show only those records where the inventory difference is greater than zero, indicating a positive difference (more in stock than ordered). The results are then ordered in descending order based on the inventory difference.
 
 #### Total Cases vs. Population
 ```sql
