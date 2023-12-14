@@ -10,7 +10,7 @@ Mint Classics Company, a retailer of classic model cars and other vehicles, is l
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Data Analysis](#data-analysis)
 - [Results and Findings](#results-and-findings)
-- [Deliverables](#deliverables)
+- [Recommendations](#recommendations)
 
   
 ### Project Overview
@@ -21,12 +21,12 @@ Conducted exploratory analysis to investigate if there were any patterns or them
 ### Data Sources
 
 * [Mint Classics Dataset](https://d3c33hcgiwev3.cloudfront.net/2oM-7bPhQAK0DX4vqIQ_JQ_596ae3ede6934608af481acc56cb18f1_mintclassicsDB.sql?Expires=1701993600&Signature=dShvrtGJLsQD2jDNaa~4YrY9RMnItBt9vtQaxiN6PeFpDNgNMmnV3eu8q6RRgu66Mo9YmvipbRfHsgXCuLKOvraKCq7vbGuQN664xB5X8ot0~N-txScgkRcM5d2OYhUdoKy1jy6RCkTKQNX1afuYxThRPKe-klWcSlNfuyCuuf0_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
-* [EER](https://github.com/phelpsbp/Projects/blob/main/Mint%20Classics%20Inventory%20Analysis/EER.jpg)
+* [EER Diagram](https://github.com/phelpsbp/Projects/blob/main/Mint%20Classics%20Inventory%20Analysis/EER.jpg)
 
 ### Tools
 
 Tools Used:
-* MySQL Workbench - Analysis
+* MySQL Workbench - Data Analysis
 * Excel - Pivot Tables and Visualizations
 ---
 ## Data Cleaning and Preparation
@@ -39,12 +39,10 @@ In the initial data preparation phase, we performed the following tasks:
 
 EDA involved exploring the products currently in inventory to answer key questions, such as:
 
-- Which individual products are the least ordered?
-- Which individual products might be overstocked?
-- Which product lines contribute to overstocking?
+- Which products have the lowest and highest order rates?
+- Which product lines are most in demand?
 - Which warehouses have the highest and lowest inventory stocks?
-- What the most expensive items in stock and does expense play a role in order frequency?
-- Who are the top customers? Do their debt/credit ratios play a role?
+- Who are the top customers? 
 
 ## Data Analysis
 
@@ -207,11 +205,20 @@ The key findings are summarized as follows:
 1. Trucks and Buses, Ships, and Trains were the three least ordered product lines. 
 2. Trains made up only 2.67% of all orders made. Coupled with a low order frequency of 0.62%, this alludes to an overstock due to low consumer demands.
 3. Southern Warehouses had low overall inventory with the inventory consisting of very slow selling product-lines.
-4. The Eastern Warehouse had the highest stock levels which consisted of classic model cars that are high in demand. 
+4. The Eastern Warehouse had the highest stock levels consisting of classic model cars that are high in demand. 
 
 ## Recommendations
+1. **Product Line Adjustment:**
+* Consider reducing the inventory of product lines with low demand, such as Trucks and Buses, Ships, and Trains. This could involve offering promotions, bundling, or marketing strategies to boost sales.
+* Allocate more resources and space to product lines with higher demand, like Classic Cars, which are top-sellers.
+  
+2. **Warehouse Optimization**:
+* Evaluate the performance of Southern Warehouses and consider redistributing slow-moving products to other locations to ensure efficient space utilization.
+* Explore the possibility of consolidating or closing Southern Warehouses if their low inventory is consistently due to slow-selling products.
 
-
+3. **Customer Loyalty Programs**
+* Tailor promotions or incentives that encourage repeat business.
+* Consider exclusive offers for high-value customers to maintain their patronage.
 
 
 
