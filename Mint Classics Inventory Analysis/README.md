@@ -9,7 +9,6 @@ Mint Classics Company, a retailer of classic model cars and other vehicles, is l
 - [Data Cleaning and Preparation](#data-cleaning-and-preparation)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Data Analysis](#data-analysis)
-- [Table Merging](#table-merging)
 - [Results and Findings](#results-and-findings)
 - [Deliverables](#deliverables)
 
@@ -17,7 +16,7 @@ Mint Classics Company, a retailer of classic model cars and other vehicles, is l
 ### Project Overview
 ---
 
-Conducted exploratory analysis to investigate if there were any patterns or themes that may influence the reduction or reorganization of inventory in the Mint Classics storage facilities. Conducted a what-if analysis showing the impact a 5% inventory reduction, and provided analytic insights and data-driven recommendations. 
+Conducted exploratory analysis to investigate if there were any patterns or themes that may influence the reduction or reorganization of inventory in the Mint Classics storage facilities, and provided analytic insights and data-driven recommendations. 
 
 ### Data Sources
 
@@ -27,7 +26,8 @@ Conducted exploratory analysis to investigate if there were any patterns or them
 ### Tools
 
 Tools Used:
-* MySQL Workbench
+* MySQL Workbench - Analysis
+* Excel - Pivot Tables and Visualizations
 ---
 ## Data Cleaning and Preparation
 
@@ -50,7 +50,7 @@ EDA involved exploring the products currently in inventory to answer key questio
 
 
 ### Order Frequencies
-
+#### Individual Products
 To start, let's look at the overall stock counts. Using the `mintclassics.products` and `mintclassics.orderdetails` tables, I'll take a look at the differences in inventory-to-order counts.
 
 ```sql
@@ -68,7 +68,7 @@ FROM
         SUM(ord.quantityOrdered) as totalOrdered
 	FROM 
 		mintclassics.products as prd
-    LEFT JOIN 
+    	LEFT JOIN 
 		mintclassics.orderdetails as ord on prd.productCode = ord.productCode
 	GROUP BY
 		prd.productCode,
@@ -82,153 +82,136 @@ ORDER BY
 ```
 The query filters the results to show only those records where the inventory difference is greater than zero, indicating a positive difference (more in stock than ordered). The results are then ordered in descending order based on the inventory difference.
 
-#### Total Cases vs. Population
-```sql
-select location, date, total_cases, population, 
-(total_cases/population)*100 as PercentPopulationInfected
-from PortfolioProject..CovidDeaths$
-where location like '%states%'
-order by 1,2 
-```
+![top5_products_in_stock](https://github.com/phelpsbp/Projects/assets/150976820/da4f1f41-2d7c-4ac9-89f7-6ee0959b9f3f)
 
-#### Infection Rates vs. Population
+It looks like 2002 Suzuki XREO has the largest inventory difference, with 9997 currently in stock and only 1028 ordered overall. 
+In the top 5 individual products with the highest stock-to-order difference, 4 of the products are cars and 1 is an airplane. 
+Let's dig deeper into that. Are there any product lines that underperform or contribute to overstocking? 
+
+#### Product Lines
+Let's look at the product lines and their total inventories, quantity ordered, total earnings, and their stock-to-order ratios. 
+```sql
+SELECT
+    	prd.productLine,
+    	prl.textDescription as productLineDescription,
+    	SUM(prd.quantityInStock) as inventoryTotal,
+    	SUM(ord.quantityOrdered) as totalOrdered,
+    	SUM(ord.priceEach * ord.quantityOrdered) as totalEarnings,
+    	(SUM(ord.quantityOrdered) / SUM(prd.quantityInStock)) * 100 as inventoryDifferencePercentage
+FROM
+	mintclassics.products as prd
+LEFT JOIN
+	mintclassics.productlines as prl on prl.productLine = prd.productLine
+LEFT JOIN
+	mintclassics.orderdetails as ord on prd.productCode = ord.productCode
+GROUP BY 
+	prd.productLine, prl.textDescription
+order by 
+	inventoryDifferencePercentage desc;
+```
+The order of these results is based on the order frequencies of the product line as whole, helping to identify which have a higher percentage of excess inventory or unmet demand. 
+
+<img src="https://github.com/phelpsbp/Projects/assets/150976820/ccf06c2a-677f-47ae-b216-3327a89008f0"/><img src="https://github.com/phelpsbp/Projects/assets/150976820/57e112e7-bcc3-4633-80da-11b53ec5783d"/>
+
+It appears that while 4 of the 5 products with the highest amount of stock were classic cars, they are also the most ordered product line with significantly higher earnings than any other product line, indicating their inventory numbers are meeting demands. 
+Ships and trains have very low order rates, with trains making up only 2.67% of all orders. The low amount of orders coupled with a 0.62% stock-to-order rate suggests that, despite the relatively low demand indicated by the quantity of orders, there is a possibility of an overstock of trains. 
+
+### Warehouses
+
+Let's take a look at data related to product inventory across different warehouses. I'll be looking at which warehouses have both the highest and lowest inventories.
+#### Individual Products in Each Warehouse
 
 ```sql
-select location, population, max(total_cases) as HighestInfectionCount, 
-Max((total_cases/population))*100 as PercentPopulationInfected
-from PortfolioProject..CovidDeaths$
--- Where location like '%states%'
-group by location, population
-order by PercentPopulationInfected desc
+SELECT
+	prd.productName,
+    	wh.warehouseName,
+    	SUM(prd.quantityInStock) AS inventoryTotal
+FROM 
+	mintclassics.products AS prd
+JOIN
+	mintclassics.warehouses AS wh ON prd.warehouseCode = wh.warehouseCode
+GROUP BY 
+	prd.productName, wh.warehouseName
+ORDER BY
+	inventoryTotal asc;
 ```
-#### Highest Death Counts
-To calculate for maximum deaths, I converted `total_deaths` from nvarchar(255) to an interger using the `CAST` function.
-```sql
-select location, max(cast(total_deaths as int)) as TotalDeathCount
-from PortfolioProject..CovidDeaths$
--- Where location like '%states%'
-where continent is not null
-group by location
-order by TotalDeathCount desc
-```
+The results show a list of products along with their corresponding warehouse names and the total quantity in stock for each product in each warehouse. The ordering is based on the ascending total inventory, meaning that the products with the lowest inventory across all warehouses appear first.
 
-### COVID Data by Continent
-I ran the same queries from examining the country data, but set the `SELECT` function to `continent` instead of `location`, and used `GROUP BY` to sort the data by continent instead of location (country).
+| ![Screenshot 2023-12-14 121215](https://github.com/phelpsbp/Projects/assets/150976820/b3b64170-5087-4adb-af0d-e61778c73887)| 
+|:--:| 
+| Pivot Table from the results of the query examining individual product stocks in each warehouse. The Pivot Table shows stock totals by warehouse |
 
-## Table Merging
-With the data obtained from the analysis, I'll be joining both datasets on `continent`, `location`, `date`, and `population`, as well as adding `new_vaccinations` to our new master dataset. 
+It looks like the Southern Warehouses have the lowest inventory overall. 
+To validate the pivot table findings, I'm going to run a query for warehouse stock totals overall.
+#### Overall Stock Totals
 ```sql
-select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations,
-sum(convert(int, vac.new_vaccinations)) OVER (Partition by dea.location 
-order by dea.location,dea.date) as RollingPeopleVaccinated
-from PortfolioProject..CovidDeaths$ dea
-join PortfolioProject..CovidVaccinations$ vac 
-on dea.location = vac.location
-and dea.date = vac.date
-where dea.continent is not null
-order by 2,3;
+SELECT
+	wh.warehouseCode,
+    	wh.warehouseName,
+    	SUM(prd.quantityinStock) as stockTotal
+FROM
+	mintclassics.warehouses as wh
+LEFT JOIN 
+	mintclassics.products as prd on wh.warehouseCode = prd.warehouseCode
+GROUP BY 
+	wh.warehouseCode,
+    	wh.warehouseName
+order by 
+	stockTotal desc;
 ```
+![Screenshot 2023-12-14 123455](https://github.com/phelpsbp/Projects/assets/150976820/50b88e20-ff34-4118-9f23-6be15589e932)![Screenshot 2023-12-14 123055](https://github.com/phelpsbp/Projects/assets/150976820/2adbe1b7-7a6a-40f6-beab-e67caee61bfb)
 
-### CTE Table
-To avoid getting the total sum of vaccinations and calculate a rolling count to represent vaccinations continuing over time, I partitioned by location **and** date. 
-```sql
-With PopvsVac (Continent, Location, Date, Population, New_Vaccinations, 
-RollingPeopleVaccinated) as
-(
-select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations, 
-sum(convert(int, vac.new_vaccinations)) OVER (Partition by dea.location 
-order by dea.location, dea.date) as RollingPeopleVaccinated
---, (RollingPeopleVaccinated/population)*100
-from PortfolioProject..CovidDeaths$ dea
-join PortfolioProject..CovidVaccinations$ vac
-on dea.location = vac.location
-and dea.date = vac.date
-where dea.continent is not null
-)
-select *, (RollingPeopleVaccinated/Population)*100
-from PopvsVac
-```
-### Temp Table
-The information resulted in an unorganized mess. To resolve this I tried commenting out "where `dea.continent` is not null" which resulted in an error due to the table already existing, whoops! Let's go ahead and use the `DROP TABLE` function to fix this. 
-```sql
-Drop Table if exists #PercentPopulationVaccinated
-Create Table #PercentPopulationVaccinated
-(
-Continent nvarchar(255),
-Location nvarchar(255),
-Date datetime, 
-Population numeric,
-New_Vaccinations numeric,
-RollingPeopleVaccinated numeric
-)
+The results show how the inventory is distributed across different warehouses.
+The query validated that the Southern warehouses have the lowest overall inventory and Eastern Warehouses have the highest. 
+Low inventory could allude to: 
+1) high demand, quick turnover rates, or efficient supply chain managment.
+or
+2) slow turnover rate if the products are in low demand.
 
-insert into #PercentPopulationVaccinated
-select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations,
-sum(convert(int, vac.new_vaccinations)) OVER (Partition by dea.location 
-order by dea.location, dea.date) as RollingPeopleVaccinated
---, (RollingPeopleVaccinated/population)*100
-from PortfolioProject..CovidDeaths$ dea
-join PortfolioProject..CovidVaccinations$ vac
-on dea.location = vac.location
-and dea.date = vac.date
---where dea.continent is not null
---order by 2,3
-select *, (RollingPeopleVaccinated/Population)*100
-from #PercentPopulationVaccinated
+#### Southern Warehouse
+To check for possible underlying reasons, I'm going to create a pivot table showing the specific items in stock in the Southern Warehouse. 
+![Screenshot 2023-12-14 165105](https://github.com/phelpsbp/Projects/assets/150976820/9432be96-6371-4311-b52c-d90f3ebf3406)
+
+Looks like the Southern Warehouse has inventory consisting primarily of the three product lines with the slowest turnover rates - Trucks and Buses, Ships, and Trains. 
+Let's take a peak at the inventory in the Eastern Warehouse.
+
+#### Eastern Warehouse
+
+![Screenshot 2023-12-14 170108](https://github.com/phelpsbp/Projects/assets/150976820/8d59e585-6f08-456c-b9ef-bde45f0e62dc)
+
+The Eastern Warehouse holds cars, which we know from previous queries have high inventory due to high demand. 
+
+
+### Customers vs. Sales Amounts
+Who are the top customers? To retrieve insights into customers and their spending habits, I'll be using their customer number, customer name, payment date, and the total earnings for the company associated with each payment. 
+
+```sql
+SELECT
+	cmr.customerNumber,
+	cmr.customerName,
+    	pmt.paymentDate,
+    	pmt.amount AS totalEarnings
+FROM
+	mintclassics.customers AS cmr
+LEFT Join
+	mintclassics.payments as pmt on cmr.customerNumber = pmt.customerNumber
+order by
+	totalEarnings desc;
 ```
+|![Screenshot 2023-12-14 131242](https://github.com/phelpsbp/Projects/assets/150976820/e490bae5-6267-4621-9e84-0394e19f31ec)![Screenshot 2023-12-14 132411](https://github.com/phelpsbp/Projects/assets/150976820/a66f96a2-f057-4bda-a625-47c79f65f9cb)| 
+|:--:| 
+| The results are ordered by total earnings in descending order, meaning the customers who have spent the most are listed at the top of the table. These pivot tables show that Euro+ Shopping Channel and Mini Gifts Distributors Ltd. make up a majority of the company's sales |
 
 ## Results and Findings
-### Global Numbers - Total Cases vs. Total Deaths
-```sql
-select sum(new_cases) as total_cases, sum(cast(new_deaths as int)) as total_deaths, 
-sum(cast(new_deaths as int))/sum(new_cases)*100 as DeathPercentage
-from PortfolioProject..CovidDeaths$
---where location like '%states%'
-where continent is not null
---group by date
-order by 1,2
-```
-![Screenshot 2023-11-28 170811](https://github.com/phelpsbp/Projects/assets/150976820/d57ef499-6bb8-49de-9c4a-8f193b1323cb)
+The key findings are summarized as follows:
+1. Trucks and Buses, Ships, and Trains were the three least ordered product lines. 
+2. Trains made up only 2.67% of all orders made. Coupled with a low order frequency of 0.62%, this alludes to an overstock due to low consumer demands.
+3. Southern Warehouses had low overall inventory with the inventory consisting of very slow selling product-lines.
+4. The Eastern Warehouse had the highest stock levels which consisted of classic model cars that are high in demand. 
 
-### Continents with the Highest Death Counts
-```sql
-Select location, sum(cast(new_deaths as int)) as TotalDeathCount
-from PortfolioProject..CovidDeaths$
---where location like '%states%'
-where continent is null
-and location not in ('World', 'European Union', 'International')
-group by location
-order by TotalDeathCount desc
-```
-![Screenshot 2023-11-28 170830](https://github.com/phelpsbp/Projects/assets/150976820/a2899fce-8fc5-4674-9626-6c5d3932b3b3)
-
-### Highest Infection Rates
-```sql
-select location, population, max(total_cases) as HighestInfectionCount, 
-Max((total_cases/population))*100 as PercentPopulationInfected
-from PortfolioProject..CovidDeaths$
--- Where location like '%states%'
-group by location, population
-order by PercentPopulationInfected desc
-```
-![Screenshot 2023-11-28 170902](https://github.com/phelpsbp/Projects/assets/150976820/72dde584-b52c-42e8-a3cc-f7ebaa2f210f)
-
-### Highest Infection Rates by Country, Represented Over Time. 
-```sql
-select location, population, date, max(total_cases) as HighestInfectionCount, 
-Max((total_cases/population))*100 as PercentPopulationInfected
-from PortfolioProject..CovidDeaths$
--- Where location like '%states%'
-group by location, population, date
-order by PercentPopulationInfected desc
-```
-![Screenshot 2023-11-28 171015](https://github.com/phelpsbp/Projects/assets/150976820/2fd630a5-8ba3-499f-9f1f-1966ed649849)
-  
-## Deliverables
+## Recommendations
 
 
-The Full, interactive Tableau Dashboard can be viewed [here](https://public.tableau.com/app/profile/brittany.everette/viz/CovidDashboard_17001768757930/Dashboard1)
-![Screenshot 2023-11-20 193802](https://github.com/phelpsbp/Projects/assets/150976820/f565cc5f-969d-422a-ae64-6387f5957573)
 
 
 
